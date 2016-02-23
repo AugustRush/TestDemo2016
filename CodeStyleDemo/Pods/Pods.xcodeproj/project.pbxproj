@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083930F6341603ABCB856810C4A0A89F /* ARAnimationFakeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 028CF86084560EF639EA75A1F4A82DC6 /* ARAnimationFakeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D56B8CBC9F79C0ADC6621CE7BADC7A /* ARAnimatableProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BFB86B4438C42699D13A4C2B627955 /* ARAnimatableProperty.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		107C409E409DB7552F46A9C1764BC61E /* ARAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D986BBA579DAC0F6AF18A642375DC025 /* ARAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1098C123D5A94CA52198386122784157 /* ARAnimationFakeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA18371C57B202046ED16E4A1D3C48 /* ARAnimationFakeArray.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		28FD386391AA86200910D43970D2D664 /* ARInterpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 30288DDF8A20E1AC4D7800EB53C32769 /* ARInterpolation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36AA3A9D216B4DDE2F75A7415BF7BB37 /* CALayer+ARAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F570B15380E9E1476294BC6741186A /* CALayer+ARAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4826EAE9E8713F273D8CA407A54BEBCA /* ARSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B9CE12E1A065F1A017462EE7B19177 /* ARSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		585F165ADEA98426A9834F946077E7F8 /* ARBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ED0377AB99F15D5A5F304351990208 /* ARBasicAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B6A07C0BCA6E5BDD9BE167906D8A497 /* AREasingCurveFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9BBB291E9D0CFC6E410379D49AA72 /* AREasingCurveFunction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5BBDE544DD902FC43DD78E523F8055FB /* CALayer+ARAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CDBFBAC963F5F4EC558CD1FAAB205 /* CALayer+ARAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60878461B9355A8DB0EFA4FB43EBFA52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		7E0DD1ACE0C932ED1D1EB9509D8E7B5A /* UIView+ARAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8A5908689C8091B8B4371B26BE5C25 /* UIView+ARAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D2BC519613C7819F4583B9F5FBB345C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		A326074F2EBA92114130628F5B9110E9 /* ARBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC6C74C7D31BFE35EA8C9EF756B97F6 /* ARBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B84BFEC3056E093B4DFF2C96DDAA02 /* AREasingCurveFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 82ED13C26E1D29AE7F1645111327CF4E /* AREasingCurveFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1DE9D84A3CED1A4C17D37AA0E94BE7F /* ArInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D12973304ACB73A670358193ED520C /* ArInterpolation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D815B0EC2791B30C52CCC818C1A1248E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		DB8FC57B9AA6D8003E4BF4A7AD2E5518 /* ARAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FB721C7B0263D2EC5E467F7DF8F9A5 /* ARAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEAFA8F2CD0D09496B0E058D7C99A59C /* ARSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2041037174126002852331CFF1942 /* ARSpringAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F20617E20BDF25890974C817BAE02AED /* ARAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C288376F67A4BAADD3A0CF1C88566D5 /* ARAnimation-dummy.m */; };
+		F33B4951697AC6922BB92A92435E1D57 /* UIView+ARAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D1F9F0392E788CE90812739DD69187 /* UIView+ARAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8665509DE46CDB2B09D834546C57AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F359386467249B99B97247F1D455F7;
+			remoteInfo = ARAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028CF86084560EF639EA75A1F4A82DC6 /* ARAnimationFakeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARAnimationFakeArray.h; path = Source/ARAnimationFakeArray.h; sourceTree = "<group>"; };
+		03F9BBB291E9D0CFC6E410379D49AA72 /* AREasingCurveFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AREasingCurveFunction.m; path = Source/AREasingCurveFunction.m; sourceTree = "<group>"; };
+		09D1F9F0392E788CE90812739DD69187 /* UIView+ARAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ARAnimation.h"; path = "Source/UIView+ARAnimation.h"; sourceTree = "<group>"; };
+		0C288376F67A4BAADD3A0CF1C88566D5 /* ARAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARAnimation-dummy.m"; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		18FB721C7B0263D2EC5E467F7DF8F9A5 /* ARAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARAnimation.h; path = Source/ARAnimation.h; sourceTree = "<group>"; };
+		1ABA18371C57B202046ED16E4A1D3C48 /* ARAnimationFakeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARAnimationFakeArray.m; path = Source/ARAnimationFakeArray.m; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		30288DDF8A20E1AC4D7800EB53C32769 /* ARInterpolation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARInterpolation.h; path = Source/ARInterpolation.h; sourceTree = "<group>"; };
+		35BFB86B4438C42699D13A4C2B627955 /* ARAnimatableProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARAnimatableProperty.m; path = Source/ARAnimatableProperty.m; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		441227391BCABF10219D9EB6DCF8C432 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		54ACFC22C6E7A796D9795A5AF28F30FD /* ARAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARAnimation.xcconfig; sourceTree = "<group>"; };
+		68E2041037174126002852331CFF1942 /* ARSpringAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARSpringAnimation.m; path = Source/ARSpringAnimation.m; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		82ED13C26E1D29AE7F1645111327CF4E /* AREasingCurveFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AREasingCurveFunction.h; path = Source/AREasingCurveFunction.h; sourceTree = "<group>"; };
+		84ED0377AB99F15D5A5F304351990208 /* ARBasicAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARBasicAnimation.m; path = Source/ARBasicAnimation.m; sourceTree = "<group>"; };
+		85B9CE12E1A065F1A017462EE7B19177 /* ARSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARSpringAnimation.h; path = Source/ARSpringAnimation.h; sourceTree = "<group>"; };
+		98C6EAAD8AA7AA5B04EB64113BDD5E8B /* libARAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		9BC6C74C7D31BFE35EA8C9EF756B97F6 /* ARBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARBasicAnimation.h; path = Source/ARBasicAnimation.h; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A67CDBFBAC963F5F4EC558CD1FAAB205 /* CALayer+ARAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+ARAnimation.m"; path = "Source/CALayer+ARAnimation.m"; sourceTree = "<group>"; };
+		B5F570B15380E9E1476294BC6741186A /* CALayer+ARAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+ARAnimation.h"; path = "Source/CALayer+ARAnimation.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2D12973304ACB73A670358193ED520C /* ArInterpolation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ArInterpolation.m; path = Source/ArInterpolation.m; sourceTree = "<group>"; };
+		CF22866087794BCAFF87EDB7AF0043BF /* ARAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARAnimation-prefix.pch"; sourceTree = "<group>"; };
+		D986BBA579DAC0F6AF18A642375DC025 /* ARAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARAnimatableProperty.h; path = Source/ARAnimatableProperty.h; sourceTree = "<group>"; };
+		DD8A5908689C8091B8B4371B26BE5C25 /* UIView+ARAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ARAnimation.m"; path = "Source/UIView+ARAnimation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25DFB632AE3A17B9F08003FA614DF93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60878461B9355A8DB0EFA4FB43EBFA52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B082A300FA05D5EF74F62CDDF4C4E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D815B0EC2791B30C52CCC818C1A1248E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		23EF9208A28CD2A606394D381B732064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF81F124E6A19175A06F9BB99DD07F99 /* ARAnimation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				23EF9208A28CD2A606394D381B732064 /* Pods */,
+				DAA12EE7B13E72A9F058770CAD3C0708 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AF81F124E6A19175A06F9BB99DD07F99 /* ARAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D986BBA579DAC0F6AF18A642375DC025 /* ARAnimatableProperty.h */,
+				35BFB86B4438C42699D13A4C2B627955 /* ARAnimatableProperty.m */,
+				18FB721C7B0263D2EC5E467F7DF8F9A5 /* ARAnimation.h */,
+				028CF86084560EF639EA75A1F4A82DC6 /* ARAnimationFakeArray.h */,
+				1ABA18371C57B202046ED16E4A1D3C48 /* ARAnimationFakeArray.m */,
+				9BC6C74C7D31BFE35EA8C9EF756B97F6 /* ARBasicAnimation.h */,
+				84ED0377AB99F15D5A5F304351990208 /* ARBasicAnimation.m */,
+				82ED13C26E1D29AE7F1645111327CF4E /* AREasingCurveFunction.h */,
+				03F9BBB291E9D0CFC6E410379D49AA72 /* AREasingCurveFunction.m */,
+				30288DDF8A20E1AC4D7800EB53C32769 /* ARInterpolation.h */,
+				C2D12973304ACB73A670358193ED520C /* ArInterpolation.m */,
+				85B9CE12E1A065F1A017462EE7B19177 /* ARSpringAnimation.h */,
+				68E2041037174126002852331CFF1942 /* ARSpringAnimation.m */,
+				B5F570B15380E9E1476294BC6741186A /* CALayer+ARAnimation.h */,
+				A67CDBFBAC963F5F4EC558CD1FAAB205 /* CALayer+ARAnimation.m */,
+				09D1F9F0392E788CE90812739DD69187 /* UIView+ARAnimation.h */,
+				DD8A5908689C8091B8B4371B26BE5C25 /* UIView+ARAnimation.m */,
+				BF6F11CD54C0D8E01D3444371727D81A /* Support Files */,
+			);
+			path = ARAnimation;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BF6F11CD54C0D8E01D3444371727D81A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54ACFC22C6E7A796D9795A5AF28F30FD /* ARAnimation.xcconfig */,
+				0C288376F67A4BAADD3A0CF1C88566D5 /* ARAnimation-dummy.m */,
+				CF22866087794BCAFF87EDB7AF0043BF /* ARAnimation-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ARAnimation";
+			sourceTree = "<group>";
+		};
+		DAA12EE7B13E72A9F058770CAD3C0708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98C6EAAD8AA7AA5B04EB64113BDD5E8B /* libARAnimation.a */,
+				441227391BCABF10219D9EB6DCF8C432 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC76A62A3F0A7DEA191A882B190989C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107C409E409DB7552F46A9C1764BC61E /* ARAnimatableProperty.h in Headers */,
+				DB8FC57B9AA6D8003E4BF4A7AD2E5518 /* ARAnimation.h in Headers */,
+				083930F6341603ABCB856810C4A0A89F /* ARAnimationFakeArray.h in Headers */,
+				A326074F2EBA92114130628F5B9110E9 /* ARBasicAnimation.h in Headers */,
+				B4B84BFEC3056E093B4DFF2C96DDAA02 /* AREasingCurveFunction.h in Headers */,
+				28FD386391AA86200910D43970D2D664 /* ARInterpolation.h in Headers */,
+				4826EAE9E8713F273D8CA407A54BEBCA /* ARSpringAnimation.h in Headers */,
+				36AA3A9D216B4DDE2F75A7415BF7BB37 /* CALayer+ARAnimation.h in Headers */,
+				F33B4951697AC6922BB92A92435E1D57 /* UIView+ARAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6438CA773340DD4A597E7BB3B0D0E3E5 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460ED0AEA41AB29BF9F788545E293EFC /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				C53991D1D3A39F398A4DE688EBAD90B6 /* Sources */,
+				7B082A300FA05D5EF74F62CDDF4C4E1F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C2EF04A568A7904D9E9ED8123B4F07 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 441227391BCABF10219D9EB6DCF8C432 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C4F359386467249B99B97247F1D455F7 /* ARAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE23D3AE8D5A31A1E9C3B57E707360B2 /* Build configuration list for PBXNativeTarget "ARAnimation" */;
+			buildPhases = (
+				66D65E82E4CAE548DB98198BD67F262B /* Sources */,
+				25DFB632AE3A17B9F08003FA614DF93A /* Frameworks */,
+				DC76A62A3F0A7DEA191A882B190989C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARAnimation;
+			productName = ARAnimation;
+			productReference = 98C6EAAD8AA7AA5B04EB64113BDD5E8B /* libARAnimation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DAA12EE7B13E72A9F058770CAD3C0708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4F359386467249B99B97247F1D455F7 /* ARAnimation */,
+				6438CA773340DD4A597E7BB3B0D0E3E5 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66D65E82E4CAE548DB98198BD67F262B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D56B8CBC9F79C0ADC6621CE7BADC7A /* ARAnimatableProperty.m in Sources */,
+				F20617E20BDF25890974C817BAE02AED /* ARAnimation-dummy.m in Sources */,
+				1098C123D5A94CA52198386122784157 /* ARAnimationFakeArray.m in Sources */,
+				585F165ADEA98426A9834F946077E7F8 /* ARBasicAnimation.m in Sources */,
+				5B6A07C0BCA6E5BDD9BE167906D8A497 /* AREasingCurveFunction.m in Sources */,
+				C1DE9D84A3CED1A4C17D37AA0E94BE7F /* ArInterpolation.m in Sources */,
+				EEAFA8F2CD0D09496B0E058D7C99A59C /* ARSpringAnimation.m in Sources */,
+				5BBDE544DD902FC43DD78E523F8055FB /* CALayer+ARAnimation.m in Sources */,
+				7E0DD1ACE0C932ED1D1EB9509D8E7B5A /* UIView+ARAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C53991D1D3A39F398A4DE688EBAD90B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D2BC519613C7819F4583B9F5FBB345C /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C2EF04A568A7904D9E9ED8123B4F07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARAnimation;
+			target = C4F359386467249B99B97247F1D455F7 /* ARAnimation */;
+			targetProxy = C8665509DE46CDB2B09D834546C57AB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A5EBB8C5C0A506FEF1D020F9C6F8AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		501F2235AC795160ED6C19086336A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ACFC22C6E7A796D9795A5AF28F30FD /* ARAnimation.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ARAnimation/ARAnimation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6569F07DC21AD8B72752685013E3D9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		719995EAF173AA78ADBFA11A6640035D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A14E2444F162A20E3776820E0ADFFB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5687D7E94C1EED1EAA4592E4AB310D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ACFC22C6E7A796D9795A5AF28F30FD /* ARAnimation.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ARAnimation/ARAnimation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6569F07DC21AD8B72752685013E3D9D8 /* Debug */,
+				A14E2444F162A20E3776820E0ADFFB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		460ED0AEA41AB29BF9F788545E293EFC /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719995EAF173AA78ADBFA11A6640035D /* Debug */,
+				4A5EBB8C5C0A506FEF1D020F9C6F8AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE23D3AE8D5A31A1E9C3B57E707360B2 /* Build configuration list for PBXNativeTarget "ARAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501F2235AC795160ED6C19086336A87A /* Debug */,
+				E5687D7E94C1EED1EAA4592E4AB310D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

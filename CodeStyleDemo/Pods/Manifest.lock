@@ -1,0 +1,19 @@
+PODS:
+  - ARAnimation (0.5)
+
+DEPENDENCIES:
+  - ARAnimation (from `https://github.com/AugustRush/ARAnimation.git`)
+
+EXTERNAL SOURCES:
+  ARAnimation:
+    :git: https://github.com/AugustRush/ARAnimation.git
+
+CHECKOUT OPTIONS:
+  ARAnimation:
+    :commit: 677c034e20fb9c022cb9a3db31239bd5dcc40dd8
+    :git: https://github.com/AugustRush/ARAnimation.git
+
+SPEC CHECKSUMS:
+  ARAnimation: 6ea5857b7c9c1e0e898f9686bb15f1ca67c498db
+
+COCOAPODS: 0.39.0

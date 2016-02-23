@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97EC38781C0EC5710056DC2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38771C0EC5710056DC2A /* main.m */; };
+		97EC387B1C0EC5710056DC2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC387A1C0EC5710056DC2A /* AppDelegate.m */; };
+		97EC387E1C0EC5710056DC2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC387D1C0EC5710056DC2A /* ViewController.m */; };
+		97EC38811C0EC5710056DC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EC387F1C0EC5710056DC2A /* Main.storyboard */; };
+		97EC38831C0EC5710056DC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EC38821C0EC5710056DC2A /* Assets.xcassets */; };
+		97EC38861C0EC5710056DC2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EC38841C0EC5710056DC2A /* LaunchScreen.storyboard */; };
+		97EC38911C0EC5710056DC2A /* BIStackViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38901C0EC5710056DC2A /* BIStackViewTests.m */; };
+		97EC389C1C0EC5710056DC2A /* BIStackViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC389B1C0EC5710056DC2A /* BIStackViewUITests.m */; };
+		97EC38AC1C0EC5D30056DC2A /* BITextGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38AB1C0EC5D30056DC2A /* BITextGridView.m */; };
+		97EC38CB1C0EECF60056DC2A /* BITextGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38CA1C0EECF60056DC2A /* BITextGridViewCell.m */; };
+		97EC38D11C0EF4310056DC2A /* UIView+BIAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38D01C0EF4310056DC2A /* UIView+BIAutoLayout.m */; };
+		97EC38D41C0F086A0056DC2A /* BITextGridViewLayoutAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC38D31C0F086A0056DC2A /* BITextGridViewLayoutAttribute.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97EC388D1C0EC5710056DC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97EC386B1C0EC5710056DC2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97EC38721C0EC5710056DC2A;
+			remoteInfo = BIStackView;
+		};
+		97EC38981C0EC5710056DC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97EC386B1C0EC5710056DC2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97EC38721C0EC5710056DC2A;
+			remoteInfo = BIStackView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97EC38731C0EC5710056DC2A /* BIStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EC38771C0EC5710056DC2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97EC38791C0EC5710056DC2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97EC387A1C0EC5710056DC2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97EC387C1C0EC5710056DC2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97EC387D1C0EC5710056DC2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97EC38801C0EC5710056DC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97EC38821C0EC5710056DC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97EC38851C0EC5710056DC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97EC38871C0EC5710056DC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EC388C1C0EC5710056DC2A /* BIStackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIStackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EC38901C0EC5710056DC2A /* BIStackViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIStackViewTests.m; sourceTree = "<group>"; };
+		97EC38921C0EC5710056DC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EC38971C0EC5710056DC2A /* BIStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EC389B1C0EC5710056DC2A /* BIStackViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIStackViewUITests.m; sourceTree = "<group>"; };
+		97EC389D1C0EC5710056DC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EC38AA1C0EC5D30056DC2A /* BITextGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITextGridView.h; sourceTree = "<group>"; };
+		97EC38AB1C0EC5D30056DC2A /* BITextGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITextGridView.m; sourceTree = "<group>"; };
+		97EC38C91C0EECF60056DC2A /* BITextGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITextGridViewCell.h; sourceTree = "<group>"; };
+		97EC38CA1C0EECF60056DC2A /* BITextGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITextGridViewCell.m; sourceTree = "<group>"; };
+		97EC38CF1C0EF4310056DC2A /* UIView+BIAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BIAutoLayout.h"; sourceTree = "<group>"; };
+		97EC38D01C0EF4310056DC2A /* UIView+BIAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BIAutoLayout.m"; sourceTree = "<group>"; };
+		97EC38D21C0F086A0056DC2A /* BITextGridViewLayoutAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITextGridViewLayoutAttribute.h; sourceTree = "<group>"; };
+		97EC38D31C0F086A0056DC2A /* BITextGridViewLayoutAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITextGridViewLayoutAttribute.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97EC38701C0EC5710056DC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC38891C0EC5710056DC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC38941C0EC5710056DC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97EC386A1C0EC5710056DC2A = {
+			isa = PBXGroup;
+			children = (
+				97EC38751C0EC5710056DC2A /* BIStackView */,
+				97EC388F1C0EC5710056DC2A /* BIStackViewTests */,
+				97EC389A1C0EC5710056DC2A /* BIStackViewUITests */,
+				97EC38741C0EC5710056DC2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97EC38741C0EC5710056DC2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97EC38731C0EC5710056DC2A /* BIStackView.app */,
+				97EC388C1C0EC5710056DC2A /* BIStackViewTests.xctest */,
+				97EC38971C0EC5710056DC2A /* BIStackViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97EC38751C0EC5710056DC2A /* BIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				97EC38A91C0EC5BF0056DC2A /* Source */,
+				97EC38791C0EC5710056DC2A /* AppDelegate.h */,
+				97EC387A1C0EC5710056DC2A /* AppDelegate.m */,
+				97EC387C1C0EC5710056DC2A /* ViewController.h */,
+				97EC387D1C0EC5710056DC2A /* ViewController.m */,
+				97EC387F1C0EC5710056DC2A /* Main.storyboard */,
+				97EC38821C0EC5710056DC2A /* Assets.xcassets */,
+				97EC38841C0EC5710056DC2A /* LaunchScreen.storyboard */,
+				97EC38871C0EC5710056DC2A /* Info.plist */,
+				97EC38761C0EC5710056DC2A /* Supporting Files */,
+			);
+			path = BIStackView;
+			sourceTree = "<group>";
+		};
+		97EC38761C0EC5710056DC2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97EC38771C0EC5710056DC2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97EC388F1C0EC5710056DC2A /* BIStackViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				97EC38901C0EC5710056DC2A /* BIStackViewTests.m */,
+				97EC38921C0EC5710056DC2A /* Info.plist */,
+			);
+			path = BIStackViewTests;
+			sourceTree = "<group>";
+		};
+		97EC389A1C0EC5710056DC2A /* BIStackViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97EC389B1C0EC5710056DC2A /* BIStackViewUITests.m */,
+				97EC389D1C0EC5710056DC2A /* Info.plist */,
+			);
+			path = BIStackViewUITests;
+			sourceTree = "<group>";
+		};
+		97EC38A91C0EC5BF0056DC2A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				97EC38AA1C0EC5D30056DC2A /* BITextGridView.h */,
+				97EC38AB1C0EC5D30056DC2A /* BITextGridView.m */,
+				97EC38D21C0F086A0056DC2A /* BITextGridViewLayoutAttribute.h */,
+				97EC38D31C0F086A0056DC2A /* BITextGridViewLayoutAttribute.m */,
+				97EC38C91C0EECF60056DC2A /* BITextGridViewCell.h */,
+				97EC38CA1C0EECF60056DC2A /* BITextGridViewCell.m */,
+				97EC38CF1C0EF4310056DC2A /* UIView+BIAutoLayout.h */,
+				97EC38D01C0EF4310056DC2A /* UIView+BIAutoLayout.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97EC38721C0EC5710056DC2A /* BIStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EC38A01C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackView" */;
+			buildPhases = (
+				97EC386F1C0EC5710056DC2A /* Sources */,
+				97EC38701C0EC5710056DC2A /* Frameworks */,
+				97EC38711C0EC5710056DC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIStackView;
+			productName = BIStackView;
+			productReference = 97EC38731C0EC5710056DC2A /* BIStackView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97EC388B1C0EC5710056DC2A /* BIStackViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EC38A31C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackViewTests" */;
+			buildPhases = (
+				97EC38881C0EC5710056DC2A /* Sources */,
+				97EC38891C0EC5710056DC2A /* Frameworks */,
+				97EC388A1C0EC5710056DC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97EC388E1C0EC5710056DC2A /* PBXTargetDependency */,
+			);
+			name = BIStackViewTests;
+			productName = BIStackViewTests;
+			productReference = 97EC388C1C0EC5710056DC2A /* BIStackViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97EC38961C0EC5710056DC2A /* BIStackViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EC38A61C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackViewUITests" */;
+			buildPhases = (
+				97EC38931C0EC5710056DC2A /* Sources */,
+				97EC38941C0EC5710056DC2A /* Frameworks */,
+				97EC38951C0EC5710056DC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97EC38991C0EC5710056DC2A /* PBXTargetDependency */,
+			);
+			name = BIStackViewUITests;
+			productName = BIStackViewUITests;
+			productReference = 97EC38971C0EC5710056DC2A /* BIStackViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97EC386B1C0EC5710056DC2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = AugustRush;
+				TargetAttributes = {
+					97EC38721C0EC5710056DC2A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					97EC388B1C0EC5710056DC2A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 97EC38721C0EC5710056DC2A;
+					};
+					97EC38961C0EC5710056DC2A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 97EC38721C0EC5710056DC2A;
+					};
+				};
+			};
+			buildConfigurationList = 97EC386E1C0EC5710056DC2A /* Build configuration list for PBXProject "BIStackView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97EC386A1C0EC5710056DC2A;
+			productRefGroup = 97EC38741C0EC5710056DC2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97EC38721C0EC5710056DC2A /* BIStackView */,
+				97EC388B1C0EC5710056DC2A /* BIStackViewTests */,
+				97EC38961C0EC5710056DC2A /* BIStackViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97EC38711C0EC5710056DC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EC38861C0EC5710056DC2A /* LaunchScreen.storyboard in Resources */,
+				97EC38831C0EC5710056DC2A /* Assets.xcassets in Resources */,
+				97EC38811C0EC5710056DC2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC388A1C0EC5710056DC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC38951C0EC5710056DC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97EC386F1C0EC5710056DC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EC38AC1C0EC5D30056DC2A /* BITextGridView.m in Sources */,
+				97EC387E1C0EC5710056DC2A /* ViewController.m in Sources */,
+				97EC38D41C0F086A0056DC2A /* BITextGridViewLayoutAttribute.m in Sources */,
+				97EC387B1C0EC5710056DC2A /* AppDelegate.m in Sources */,
+				97EC38781C0EC5710056DC2A /* main.m in Sources */,
+				97EC38D11C0EF4310056DC2A /* UIView+BIAutoLayout.m in Sources */,
+				97EC38CB1C0EECF60056DC2A /* BITextGridViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC38881C0EC5710056DC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EC38911C0EC5710056DC2A /* BIStackViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EC38931C0EC5710056DC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EC389C1C0EC5710056DC2A /* BIStackViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97EC388E1C0EC5710056DC2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97EC38721C0EC5710056DC2A /* BIStackView */;
+			targetProxy = 97EC388D1C0EC5710056DC2A /* PBXContainerItemProxy */;
+		};
+		97EC38991C0EC5710056DC2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97EC38721C0EC5710056DC2A /* BIStackView */;
+			targetProxy = 97EC38981C0EC5710056DC2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97EC387F1C0EC5710056DC2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EC38801C0EC5710056DC2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97EC38841C0EC5710056DC2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EC38851C0EC5710056DC2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97EC389E1C0EC5710056DC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97EC389F1C0EC5710056DC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97EC38A11C0EC5710056DC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BIStackView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97EC38A21C0EC5710056DC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BIStackView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97EC38A41C0EC5710056DC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BIStackViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIStackView.app/BIStackView";
+			};
+			name = Debug;
+		};
+		97EC38A51C0EC5710056DC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BIStackViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIStackView.app/BIStackView";
+			};
+			name = Release;
+		};
+		97EC38A71C0EC5710056DC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BIStackViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BIStackView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		97EC38A81C0EC5710056DC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BIStackViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.BIStackViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BIStackView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97EC386E1C0EC5710056DC2A /* Build configuration list for PBXProject "BIStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EC389E1C0EC5710056DC2A /* Debug */,
+				97EC389F1C0EC5710056DC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EC38A01C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EC38A11C0EC5710056DC2A /* Debug */,
+				97EC38A21C0EC5710056DC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		97EC38A31C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EC38A41C0EC5710056DC2A /* Debug */,
+				97EC38A51C0EC5710056DC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		97EC38A61C0EC5710056DC2A /* Build configuration list for PBXNativeTarget "BIStackViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EC38A71C0EC5710056DC2A /* Debug */,
+				97EC38A81C0EC5710056DC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97EC386B1C0EC5710056DC2A /* Project object */;
+}
