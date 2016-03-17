@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-u4-3at" customClass="BehindButton">
+                                <rect key="frame" x="175" y="120" width="251" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2335054288" blue="0.60924332530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="5ec-OD-lOi"/>
+                                    <constraint firstAttribute="height" constant="30" id="FxJ-1H-JVJ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eal-tl-Wj8" customClass="ForeView">
+                                <rect key="frame" x="175" y="120" width="251" height="260"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="od3-hQ-11H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eal-tl-Wj8" firstAttribute="leading" secondItem="Ygc-u4-3at" secondAttribute="leading" id="NuK-Fe-m5R"/>
+                            <constraint firstItem="eal-tl-Wj8" firstAttribute="trailing" secondItem="Ygc-u4-3at" secondAttribute="trailing" id="RJc-WM-DXc"/>
+                            <constraint firstItem="eal-tl-Wj8" firstAttribute="top" secondItem="Ygc-u4-3at" secondAttribute="top" id="a5r-wd-TOK"/>
+                            <constraint firstItem="eal-tl-Wj8" firstAttribute="width" secondItem="Ygc-u4-3at" secondAttribute="width" id="gUE-nd-WL1"/>
+                            <constraint firstItem="Ygc-u4-3at" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5A-L5-chJ"/>
+                            <constraint firstItem="Ygc-u4-3at" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="rJ8-Y2-FkN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="behindButton" destination="Ygc-u4-3at" id="fma-Hd-uKi"/>
+                        <outlet property="foreView" destination="eal-tl-Wj8" id="AyW-Mm-2Gk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="418"/>
+        </scene>
+    </scenes>
+</document>

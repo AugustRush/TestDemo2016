@@ -14,7 +14,6 @@
 		972510CA1C75C015004491E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972510C81C75C015004491E2 /* LaunchScreen.storyboard */; };
 		972510D51C75C015004491E2 /* MetalDemo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972510D41C75C015004491E2 /* MetalDemo1Tests.swift */; };
 		972510E01C75C015004491E2 /* MetalDemo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972510DF1C75C015004491E2 /* MetalDemo1UITests.swift */; };
-		972510EE1C75C040004491E2 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972510ED1C75C040004491E2 /* MetalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		972510DB1C75C015004491E2 /* MetalDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972510DF1C75C015004491E2 /* MetalDemo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDemo1UITests.swift; sourceTree = "<group>"; };
 		972510E11C75C015004491E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		972510ED1C75C040004491E2 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				972510C61C75C015004491E2 /* Assets.xcassets */,
 				972510C81C75C015004491E2 /* LaunchScreen.storyboard */,
 				972510CB1C75C015004491E2 /* Info.plist */,
-				972510ED1C75C040004491E2 /* MetalView.swift */,
 			);
 			path = MetalDemo1;
 			sourceTree = "<group>";
@@ -259,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972510EE1C75C040004491E2 /* MetalView.swift in Sources */,
 				972510C21C75C015004491E2 /* ViewController.swift in Sources */,
 				972510C01C75C015004491E2 /* AppDelegate.swift in Sources */,
 			);
@@ -488,6 +484,7 @@
 				972510E61C75C015004491E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		972510E71C75C015004491E2 /* Build configuration list for PBXNativeTarget "MetalDemo1Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +493,7 @@
 				972510E91C75C015004491E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		972510EA1C75C015004491E2 /* Build configuration list for PBXNativeTarget "MetalDemo1UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +502,7 @@
 				972510EC1C75C015004491E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
