@@ -28,7 +28,7 @@
     NSString *string = [NSString stringWithFormat:@"date is %@",[NSDate date]];
     [[_connectionToService remoteObjectProxy] upperCaseString:string withReply:^(NSString *aString) {
         // We have received a response. Update our text field, but do it on the main thread.
-        NSLog(@"Result string was: %@", aString);
+        NSLog(@"Result string was: %@ thread is %@", aString,[NSThread currentThread]);
     }];
 }
 
