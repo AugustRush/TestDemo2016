@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         emitterLayer?.emitterShape = kCAEmitterLayerCuboid
         emitterLayer?.emitterMode = kCAEmitterLayerSurface
         emitterLayer?.renderMode = kCAEmitterLayerBackToFront
-        emitterLayer?.seed = 10
+//        emitterLayer?.seed = 10
         emitterLayer?.emitterPosition = CGPointMake(self.view.center.x, 50)
         emitterLayer?.emitterDepth = 100
         emitterLayer?.emitterZPosition = 150
@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         for _ in 1..<5 {
             let emitterCell = CAEmitterCell()
             emitterCell.contents = UIImage(named: "flower")?.smallImage(CGSizeMake(20, 20)).CGImage
-            emitterCell.birthRate = 60
-            emitterCell.lifetime = 3
-            emitterCell.lifetimeRange = 3
+            emitterCell.birthRate = 1
+            emitterCell.lifetime = 1
+            emitterCell.lifetimeRange = 1
             emitterCell.xAcceleration = 20
             emitterCell.yAcceleration = 120
             emitterCell.velocity = 40
