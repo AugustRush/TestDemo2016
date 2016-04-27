@@ -9,10 +9,11 @@
 #import "BIAccessibilityController.h"
 #import "TestVoiceOverView.h"
 #import "ViewController.h"
+#import "BlueView.h"
 
 @interface ViewController ()
 
-@property(weak, nonatomic) IBOutlet UIView *blueView;
+@property(weak, nonatomic) IBOutlet BlueView *blueView;
 @property(weak, nonatomic) IBOutlet TestVoiceOverView *testVoiceOverView;
 
 @end

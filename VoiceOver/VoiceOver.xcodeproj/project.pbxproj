@@ -17,6 +17,7 @@
 		97BEE9EC1CA02610006A39FF /* VoiceOverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BEE9EB1CA02610006A39FF /* VoiceOverUITests.m */; };
 		97BEE9FB1CA026CD006A39FF /* TestVoiceOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BEE9FA1CA026CD006A39FF /* TestVoiceOverView.m */; };
 		97C025091CA3B9C9005721CA /* TestViewGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C025081CA3B9C9005721CA /* TestViewGrid.m */; };
+		97C84EA71CBFABA8000BFB2B /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C84EA61CBFABA8000BFB2B /* BlueView.m */; };
 		97EE3F731CA0F0BB000332E1 /* VoiceOver.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97EE3F751CA0F0BB000332E1 /* VoiceOver.strings */; };
 		97EE3F7C1CA12BB0000332E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EE3F7B1CA12BB0000332E1 /* UIKit.framework */; };
 		97EE3F951CA13715000332E1 /* BIAccessibilityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EE3F941CA13715000332E1 /* BIAccessibilityController.m */; };
@@ -60,6 +61,8 @@
 		97BEE9FA1CA026CD006A39FF /* TestVoiceOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVoiceOverView.m; sourceTree = "<group>"; };
 		97C025071CA3B9C9005721CA /* TestViewGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewGrid.h; sourceTree = "<group>"; };
 		97C025081CA3B9C9005721CA /* TestViewGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewGrid.m; sourceTree = "<group>"; };
+		97C84EA51CBFABA8000BFB2B /* BlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		97C84EA61CBFABA8000BFB2B /* BlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
 		97EE3F6F1CA0EFE7000332E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		97EE3F701CA0EFE7000332E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		97EE3F741CA0F0BB000332E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/VoiceOver.strings"; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				97BEE9FA1CA026CD006A39FF /* TestVoiceOverView.m */,
 				97C025071CA3B9C9005721CA /* TestViewGrid.h */,
 				97C025081CA3B9C9005721CA /* TestViewGrid.m */,
+				97C84EA51CBFABA8000BFB2B /* BlueView.h */,
+				97C84EA61CBFABA8000BFB2B /* BlueView.m */,
 				97BEE9CF1CA02610006A39FF /* Main.storyboard */,
 				97BEE9D21CA02610006A39FF /* Assets.xcassets */,
 				97BEE9D41CA02610006A39FF /* LaunchScreen.storyboard */,
@@ -309,6 +314,7 @@
 				97BEE9CB1CA02610006A39FF /* AppDelegate.m in Sources */,
 				97BEE9C81CA02610006A39FF /* main.m in Sources */,
 				97C025091CA3B9C9005721CA /* TestViewGrid.m in Sources */,
+				97C84EA71CBFABA8000BFB2B /* BlueView.m in Sources */,
 				97BEE9FB1CA026CD006A39FF /* TestVoiceOverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VoiceOver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AR.VoiceOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VoiceOver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AR.VoiceOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
