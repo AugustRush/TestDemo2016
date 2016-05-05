@@ -1,0 +1,20 @@
+{
+  "name": "ARAnimation",
+  "version": "0.5",
+  "summary": "Easily Core Animation and more!",
+  "description": "",
+  "homepage": "https://github.com/AugustRush/ARAnimation",
+  "license": "MIT (example)",
+  "authors": {
+    "AugustRush": "819373341@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/AugustRush/ARAnimation.git",
+    "tag": "0.5"
+  },
+  "source_files": [
+    "Source",
+    "Source/**/*.{h,m}"
+  ],
+  "exclude_files": "Source/Exclude"
+}

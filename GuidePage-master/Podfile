@@ -1,0 +1,4 @@
+platform :ios, '7.0'
+
+pod 'ARAnimation',:git => "https://github.com/AugustRush/ARAnimation.git"
+pod 'EasyLayout',:git => "https://github.com/ProfessionalIsFunny/EasyLayout.git"
