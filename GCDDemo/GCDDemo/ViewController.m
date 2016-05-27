@@ -16,11 +16,14 @@
 @property(nonatomic, strong) dispatch_queue_t queueTwo;   // serial
 @property(nonatomic, strong) dispatch_queue_t queueThree; // high concurrent
 
+@property (nonatomic, strong) NSMutableArray *products;
+
 @end
 
 @implementation ViewController {
   OSSpinLock _lock;
   dispatch_semaphore_t _semaphore;
+    NSCondition *_condition;
 }
 
 - (void)viewDidLoad {
@@ -29,8 +32,11 @@
 
   [self setUp];
 
-  //    [self testSemaphoreLock];
-  [self testPhreadMutextLock];
+    _condition = [[NSCondition alloc] init];
+    _products = @[].mutableCopy;
+    
+//      [self testSemaphoreLock];
+//  [self testPhreadMutextLock];
 }
 
 #pragma mark - private methods
@@ -49,6 +55,7 @@
   dispatch_queue_t refQueue =
       dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
   dispatch_set_target_queue(_queueThree, refQueue);
+    
 }
 
 #pragma mark - test methods
@@ -110,6 +117,59 @@
     sleep(1);
     pthread_mutex_unlock(&mutext);
   });
+}
+
+- (void)example0 {
+    dispatch_async(_queueThree, ^{
+        dispatch_barrier_async(_queueOne, ^{
+            for (int i = 0; i < 100000; i++) {
+                
+            }
+            NSLog(@"one");
+        });
+        NSLog(@"two");
+    });
+}
+
+- (void)example1 {
+   
+}
+
+- (void)createProduct {
+    [_condition lock];
+    NSLog(@"create a product");
+    [self.products addObject:@"test"];
+    NSLog(@"send a signal!");
+    [_condition signal];
+    NSLog(@"unlock....after create product");
+    [_condition unlock];
+}
+
+- (void)costProduct {
+    [_condition lock];
+    
+    while (_products.count == 0) {
+        NSLog(@"wait a product to use");
+        [_condition wait];
+        NSLog(@"exit wait product");
+    }
+    NSLog(@"use a product");
+    [self.products removeLastObject];
+    [_condition unlock];
+}
+
+- (IBAction)segmentControl1Clicked:(UISegmentedControl *)sender {
+    NSUInteger index = sender.selectedSegmentIndex;
+    switch (index) {
+        case 0:
+            [self performSelectorInBackground:@selector(createProduct) withObject:nil];
+            break;
+        case 1:
+            [self performSelectorInBackground:@selector(costProduct) withObject:nil];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

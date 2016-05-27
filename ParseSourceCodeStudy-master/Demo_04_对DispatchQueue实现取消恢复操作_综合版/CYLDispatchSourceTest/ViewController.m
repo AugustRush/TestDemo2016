@@ -56,6 +56,16 @@ static const NSUInteger CYLTotalNumber = 100;
     }
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+    
+    if (self.isRunning) {
+        [self pause];
+    }else{
+        [self resume];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     [self changeStatus:self.running];

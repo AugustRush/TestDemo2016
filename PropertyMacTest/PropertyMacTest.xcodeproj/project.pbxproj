@@ -14,6 +14,7 @@
 		973D1D4B1CB7954000540D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973D1D491CB7954000540D7F /* Main.storyboard */; };
 		973D1D561CB7954000540D7F /* PropertyMacTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D1D551CB7954000540D7F /* PropertyMacTestTests.m */; };
 		973D1D611CB7954000540D7F /* PropertyMacTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D1D601CB7954000540D7F /* PropertyMacTestUITests.m */; };
+		97BE88F51CDDDF3500240523 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BE88F41CDDDF3500240523 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		973D1D5C1CB7954000540D7F /* PropertyMacTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyMacTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		973D1D601CB7954000540D7F /* PropertyMacTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyMacTestUITests.m; sourceTree = "<group>"; };
 		973D1D621CB7954000540D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BE88F41CDDDF3500240523 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE88F51CDDDF3500240523 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		973D1D321CB7954000540D7F = {
 			isa = PBXGroup;
 			children = (
+				97BE88F41CDDDF3500240523 /* AppKit.framework */,
 				973D1D3D1CB7954000540D7F /* PropertyMacTest */,
 				973D1D541CB7954000540D7F /* PropertyMacTestTests */,
 				973D1D5F1CB7954000540D7F /* PropertyMacTestUITests */,
@@ -491,6 +495,7 @@
 				973D1D671CB7954000540D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		973D1D681CB7954000540D7F /* Build configuration list for PBXNativeTarget "PropertyMacTestTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				973D1D6A1CB7954000540D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		973D1D6B1CB7954000540D7F /* Build configuration list for PBXNativeTarget "PropertyMacTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				973D1D6D1CB7954000540D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
