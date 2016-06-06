@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970F91DC1D00348200B510BE /* UnitBezier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
 		9711A0101CCDE13D0035887F /* BezierInterpolationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierInterpolationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9711A0141CCDE13D0035887F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9711A0161CCDE13D0035887F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			children = (
 				9711A2501CCE46D20035887F /* UIBezierPath-Points.h */,
 				9711A2511CCE46D20035887F /* UIBezierPath-Points.m */,
+				970F91DC1D00348200B510BE /* UnitBezier.h */,
 				9711A0161CCDE13D0035887F /* AppDelegate.h */,
 				9711A0171CCDE13D0035887F /* AppDelegate.m */,
 				9711A0191CCDE13D0035887F /* ViewController.h */,
@@ -504,6 +506,7 @@
 				9711A03F1CCDE13D0035887F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9711A0401CCDE13D0035887F /* Build configuration list for PBXNativeTarget "BezierInterpolationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +515,7 @@
 				9711A0421CCDE13D0035887F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9711A0431CCDE13D0035887F /* Build configuration list for PBXNativeTarget "BezierInterpolationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +524,7 @@
 				9711A0451CCDE13D0035887F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

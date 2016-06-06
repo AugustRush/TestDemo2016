@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     var animator = UIDynamicAnimator()
     
+    var snaped: UISnapBehavior!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,13 +32,15 @@ class ViewController: UIViewController {
     @IBAction func buttonClicked(sender: AnyObject) {
         
 //        gravity()
-        gravityAndCollision()
+//        gravityAndCollision()
 //        snap()
 //        attachment()
 //        push()
-//        gravityAndCollsionAndItemBehavior()
+        gravityAndCollsionAndItemBehavior()
 //        snapAndItemBehavior()
 //        snapAndGravity()
+        
+//        customItem()
     }
     
     func gravity() {
@@ -76,7 +80,7 @@ class ViewController: UIViewController {
 //        let y =  CGFloat(arc4random() % 500)
         let attachment = UIAttachmentBehavior(item: self.animationView,attachedToAnchor:CGPointMake(160, 80))
         attachment.length = x
-        attachment.damping = 0.8
+        attachment.damping = 0.3
         attachment.frequency = 2
         animator.addBehavior(attachment)
         //
@@ -159,8 +163,23 @@ class ViewController: UIViewController {
     }
     
     func customItem() {
+        let interaction = InteractionItem(render: { (p) in
+            self.animationView.transform = CGAffineTransformMakeScale(p.x/100, p.x/100)
+            self.animationView.center = p
+        })
         
+        snaped = UISnapBehavior(item: interaction,snapToPoint:self.animationView.center)
+        snaped.damping = 0.5
+        animator.addBehavior(snaped)
     }
     
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesEnded(touches, withEvent: event)
+        
+        let point = touches.first?.locationInView(self.view)
+        
+        snaped.snapPoint = point!
+    }
 }
 

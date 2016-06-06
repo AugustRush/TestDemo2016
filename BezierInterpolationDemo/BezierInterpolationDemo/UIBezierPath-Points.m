@@ -10,15 +10,6 @@
 #define VALUE(_INDEX_) [NSValue valueWithCGPoint:points[_INDEX_]]
 #define POINT(_INDEX_) [(NSValue *)[points objectAtIndex:_INDEX_] CGPointValue]
 
-// Return distance between two points
-static float distance (CGPoint p1, CGPoint p2)
-{
-	float dx = p2.x - p1.x;
-	float dy = p2.y - p1.y;
-	
-	return sqrt(dx*dx + dy*dy);
-}
-
 @implementation UIBezierPath (Points)
 
 void getPointsFromBezier(void *info, const CGPathElement *element)
@@ -132,18 +123,18 @@ void getPointsFromBezier(void *info, const CGPathElement *element)
     float percent2 = [[percentArray objectAtIndex:index] floatValue];
     float percentOffset = (percent - percent1) / (percent2 - percent1);
     
-    float dx = point2.x - point1.x;
-    float dy = point2.y - point1.y;
+//    float dx = point2.x - point1.x;
+//    float dy = point2.y - point1.y;
+//    
+//    // Store dy, dx for retrieving arctan
+//    if (slope) *slope = CGPointMake(dx, dy);
+//    
+//    // Calculate new point
+//    CGFloat newX = point1.x + (percentOffset * dx);
+//    CGFloat newY = point1.y + (percentOffset * dy);
+//    CGPoint targetPoint = CGPointMake(newX, newY);
     
-    // Store dy, dx for retrieving arctan
-    if (slope) *slope = CGPointMake(dx, dy);
-    
-    // Calculate new point
-    CGFloat newX = point1.x + (percentOffset * dx);
-    CGFloat newY = point1.y + (percentOffset * dy);
-    CGPoint targetPoint = CGPointMake(newX, newY);
-    
-    return targetPoint;
+    return [self pointAtCurvePathWithPercent:percentOffset slope:slope];
 }
 
 void getBezierElements(void *info, const CGPathElement *element)

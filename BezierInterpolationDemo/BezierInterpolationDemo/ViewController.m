@@ -44,13 +44,15 @@
 //    self.shapeLayer.path = beizerPath.CGPath;
     
     UIBezierPath *testPath = [UIBezierPath bezierPath];
-    [testPath moveToPoint:CGPointMake(10, 245)];
+    
+    CGPoint from = CGPointMake(10, 245);
+    CGPoint to = CGPointMake(300, 350);
+    [testPath moveToPoint:from];
+    
 //    [testPath addQuadCurveToPoint:CGPointMake(300, 350) controlPoint:CGPointMake(150, 150)];
-    [testPath addCurveToPoint:CGPointMake(300, 350) controlPoint1:CGPointMake(150, 150) controlPoint2:CGPointMake(200, 200)];
+    [testPath addCurveToPoint:to controlPoint1:CGPointMake(150, 150) controlPoint2:CGPointMake(200, 200)];
     
     self.shapeLayer.path = testPath.CGPath;
-    NSLog(@"all points is %@",[testPath points]);
-    
 }
 
 - (void)didReceiveMemoryWarning {
