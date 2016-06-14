@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreGraphicsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-bW-a3k" customClass="demoView1" customModule="CoreGraphicsDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="200" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.2335054288" blue="0.60924332530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PZ2-HA-vi7"/>
+                                    <constraint firstAttribute="height" constant="100" id="T2P-Dc-6Gt"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2Z-ef-wZq">
+                                <rect key="frame" x="0.0" y="145" width="200" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2R0-bW-a3k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6SV-XF-nK8"/>
+                            <constraint firstItem="A2Z-ef-wZq" firstAttribute="leading" secondItem="2R0-bW-a3k" secondAttribute="leading" id="SsJ-d0-Uii"/>
+                            <constraint firstItem="A2Z-ef-wZq" firstAttribute="width" secondItem="2R0-bW-a3k" secondAttribute="width" id="eGV-IL-TJE"/>
+                            <constraint firstItem="A2Z-ef-wZq" firstAttribute="height" secondItem="2R0-bW-a3k" secondAttribute="height" id="fha-nq-6ry"/>
+                            <constraint firstItem="2R0-bW-a3k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qtA-X8-GCK"/>
+                            <constraint firstItem="A2Z-ef-wZq" firstAttribute="top" secondItem="2R0-bW-a3k" secondAttribute="bottom" constant="17" id="rgk-CL-z6k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="A2Z-ef-wZq" id="8uN-i5-agG"/>
+                        <outlet property="view1" destination="2R0-bW-a3k" id="F2s-bT-Nvm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="268"/>
+        </scene>
+    </scenes>
+</document>

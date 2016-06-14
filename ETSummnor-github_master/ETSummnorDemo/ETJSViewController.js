@@ -9,7 +9,7 @@ function viewDidLoad(self_obj,method_cmd)
     
     color_class = callCFunction("NSClassFromString","#@",["UIColor"]);
     
-    green_color = callObjcFunction("blackColor","@@:",[color_class]);
+    green_color = callObjcFunction("greenColor","@@:",[color_class]);
     
     callObjcFunction("setBackgroundColor:","v@:@",[root_view,green_color]);
     

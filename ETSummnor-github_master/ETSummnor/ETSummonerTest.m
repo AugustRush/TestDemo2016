@@ -25,6 +25,7 @@
 #import "ETClassSummoner.h"
 
 #import <objc/message.h>
+#import <objc/runtime.h>
 
 
 typedef struct Foo

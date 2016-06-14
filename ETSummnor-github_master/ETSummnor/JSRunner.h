@@ -11,7 +11,6 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 
-
 @protocol JRPointerJSExport <JSExport>
 
 -(NSString*)description;

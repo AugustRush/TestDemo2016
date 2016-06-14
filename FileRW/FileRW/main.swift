@@ -68,5 +68,14 @@ class Person {
 let p = Person()
 print("Person size is \(sizeofValue(Person)), \(sizeof(Person),unsafeAddressOf(p), sizeof(p.dynamicType))")
 
+print("Person dynamicType is \(p.dynamicType),\(p.self)")
+
+print("sizeof person is \(sizeof(p.dynamicType))")
+
+let personMirror = Mirror(reflecting: p.self)
 
 
+for i in personMirror.children.startIndex..<personMirror.children.endIndex  {
+    print(i.advancedBy(10))
+    print("属性名:\(personMirror.children[i].0!)，值:\(personMirror.children[i].1)")
+}

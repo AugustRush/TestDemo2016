@@ -12,9 +12,8 @@
 @protocol JSExportTest <JSExport>
 
 JSExportAs(add, - (NSInteger)add:(NSInteger)a b:(NSInteger)b);
+JSExportAs(newObject, + (instancetype)newObject:(NSInteger)mask);
 
-
-//- (void)add:(NSInteger)a b:(NSInteger)b;
 
 @property (nonatomic, assign) NSInteger sum;
 

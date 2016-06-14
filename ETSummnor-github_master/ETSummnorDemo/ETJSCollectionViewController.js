@@ -22,7 +22,7 @@ function viewDidLoad(self_obj,method_cmd)
     
     var nav_item = callObjcFunction("navigationItem","@@:",[self_obj]);
     
-    callObjcFunction("setTitle:","v@:@",[nav_item,"JUst TEST"]);
+    callObjcFunction("setTitle:","v@:@",[nav_item,"TEST"]);
     
     //flow layout
     

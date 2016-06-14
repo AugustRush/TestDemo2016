@@ -15,4 +15,9 @@
      return a + b;
 }
 
++ (instancetype)newObject:(NSInteger)mask {
+    JSOCTestModel *model = [[JSOCTestModel alloc] init];
+    return model;
+}
+
 @end
