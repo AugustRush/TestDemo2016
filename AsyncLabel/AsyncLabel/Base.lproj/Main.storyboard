@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="221" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kLa-lj-YDO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" rowHeight="221" id="FR4-1I-zTd" customClass="TextCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="221"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FR4-1I-zTd" id="QjW-ej-emV">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="221"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzW-XH-R6I" customClass="AsyncLabel">
+                                                    <rect key="frame" x="8" y="3" width="584" height="216"/>
+                                                    <color key="backgroundColor" red="1" green="0.2335054288" blue="0.60924332530000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="a;skdja;sd;asd;alsdk;alskd;alksd;alskdal;skd;alksd;alskdas"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="tzW-XH-R6I" secondAttribute="leading" id="0iX-rj-pPf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tzW-XH-R6I" secondAttribute="bottom" constant="-6" id="WUc-Dv-cDP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tzW-XH-R6I" secondAttribute="trailing" id="h6N-d6-snx"/>
+                                                <constraint firstItem="tzW-XH-R6I" firstAttribute="top" secondItem="QjW-ej-emV" secondAttribute="topMargin" constant="-5" id="xr1-LG-3po"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="asyncLabel" destination="tzW-XH-R6I" id="2Qo-ek-6tY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lg6-X5-3FO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qMu-Xs-YCW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kLa-lj-YDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hVU-ge-UE9"/>
+                            <constraint firstItem="kLa-lj-YDO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qz2-kg-zVg"/>
+                            <constraint firstItem="kLa-lj-YDO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rh7-48-O8M"/>
+                            <constraint firstItem="kLa-lj-YDO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="vdx-4p-SkC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kLa-lj-YDO" id="bXo-Rv-Hxu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="271"/>
+        </scene>
+    </scenes>
+</document>

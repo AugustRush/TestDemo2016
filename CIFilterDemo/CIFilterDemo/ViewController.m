@@ -43,6 +43,7 @@
 //    
 //    //释放CGImage句柄
 //    CGImageRelease(cgImage);
+   
     
     _imageView.image = [self blurWithCoreImage:self.originImage radius:10];
 }

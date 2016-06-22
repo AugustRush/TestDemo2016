@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CIFilterDemo/ViewController.m"
-            timestampString = "486045726.316123"
+            timestampString = "487666691.057646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-valueChanged:"
             landmarkType = "5">
          </BreakpointContent>

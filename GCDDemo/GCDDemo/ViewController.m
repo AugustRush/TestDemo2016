@@ -21,8 +21,9 @@
 @end
 
 @implementation ViewController {
-  OSSpinLock _lock;
-  dispatch_semaphore_t _semaphore;
+  
+    OSSpinLock _lock;
+    dispatch_semaphore_t _semaphore;
     NSCondition *_condition;
 }
 
@@ -36,7 +37,7 @@
     _products = @[].mutableCopy;
     
 //      [self testSemaphoreLock];
-//  [self testPhreadMutextLock];
+  [self testPhreadMutextLock];
 }
 
 #pragma mark - private methods
