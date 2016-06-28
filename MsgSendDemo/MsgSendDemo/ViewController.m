@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import <objc/runtime.h>
+#import <objc/runtime.h>
 #import <objc/message.h>
 
 #define TYPE(...)
@@ -28,6 +28,25 @@
     id r = MsgSend1(self.view, setBackgroundColor:, [UIColor redColor]);
     NSLog(@"result is %@",r);
     
+    NSLog(@"UIView alloc is %@",[UIView alloc]);
+    
+    class_addProtocol([UIView class], @protocol(UIViewExport));
+    
+    JSContext *context = [[JSContext alloc] init];
+    context[@"UIView"] = [UIView class];
+    
+    [context setExceptionHandler:^(JSContext *context, JSValue *value) {
+        NSLog(@"context error is %@",context.exception);
+    }];
+    UIView *view = [[context evaluateScript:@"UIView.new()"] toObject];
+    UIView *view1 = [[context evaluateScript:@"UIView.alloc().init()"] toObject];
+    NSLog(@"jsView is %@,\n view1 is %@",view,view1);
+    
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"js"];
+    NSString *mustacheJSString = [NSString stringWithContentsOfFile:file encoding:NSUTF8StringEncoding error:nil];
+    JSValue *scriptValue = [context evaluateScript:mustacheJSString];
+    NSObject *object = [context[@"view"] toObject];
+    NSLog(@"object is %@",object);
 }
 
 - (void)didReceiveMemoryWarning {

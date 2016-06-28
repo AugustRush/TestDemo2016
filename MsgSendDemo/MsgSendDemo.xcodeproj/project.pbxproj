@@ -15,6 +15,7 @@
 		976EA92B1D1397D5005D53B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EA9291D1397D5005D53B3 /* LaunchScreen.storyboard */; };
 		976EA9361D1397D5005D53B3 /* MsgSendDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EA9351D1397D5005D53B3 /* MsgSendDemoTests.m */; };
 		976EA9411D1397D5005D53B3 /* MsgSendDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EA9401D1397D5005D53B3 /* MsgSendDemoUITests.m */; };
+		97DD653B1D1FD20A00255F40 /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 97DD653A1D1FD20A00255F40 /* Test.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		976EA93C1D1397D5005D53B3 /* MsgSendDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MsgSendDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		976EA9401D1397D5005D53B3 /* MsgSendDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgSendDemoUITests.m; sourceTree = "<group>"; };
 		976EA9421D1397D5005D53B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97DD653A1D1FD20A00255F40 /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				976EA91F1D1397D5005D53B3 /* AppDelegate.m */,
 				976EA9211D1397D5005D53B3 /* ViewController.h */,
 				976EA9221D1397D5005D53B3 /* ViewController.m */,
+				97DD653A1D1FD20A00255F40 /* Test.js */,
 				976EA9241D1397D5005D53B3 /* Main.storyboard */,
 				976EA9271D1397D5005D53B3 /* Assets.xcassets */,
 				976EA9291D1397D5005D53B3 /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 			files = (
 				976EA92B1D1397D5005D53B3 /* LaunchScreen.storyboard in Resources */,
 				976EA9281D1397D5005D53B3 /* Assets.xcassets in Resources */,
+				97DD653B1D1FD20A00255F40 /* Test.js in Resources */,
 				976EA9261D1397D5005D53B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +504,7 @@
 				976EA9471D1397D5005D53B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		976EA9481D1397D5005D53B3 /* Build configuration list for PBXNativeTarget "MsgSendDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				976EA94A1D1397D5005D53B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		976EA94B1D1397D5005D53B3 /* Build configuration list for PBXNativeTarget "MsgSendDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				976EA94D1D1397D5005D53B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

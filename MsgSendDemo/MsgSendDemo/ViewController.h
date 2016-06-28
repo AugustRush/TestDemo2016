@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@import JavaScriptCore;
 
+@protocol UIViewExport <JSExport>
+
++ (id)new;
+
++ (instancetype)alloc;
+- (instancetype)init;
+
+- (void)setFrame:(CGRect)frame;
+
+@end
+
+@interface ViewController : UIViewController
 
 @end
 

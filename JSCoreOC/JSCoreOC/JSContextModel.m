@@ -61,7 +61,6 @@ JSExportAs(createObject, - (id)createObjectWithClassName:(NSString *)className s
     NSString *mustacheJSString = [NSString stringWithContentsOfFile:file encoding:NSUTF8StringEncoding error:nil];
     [_context evaluateScript:mustacheJSString];
     
-    JSManagedValue *value = [JSManagedValue]
 }
 
 - (void)evaluateScript:(NSString *)script {
