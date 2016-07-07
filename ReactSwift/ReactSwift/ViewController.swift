@@ -16,6 +16,9 @@ class ViewController: UIViewController {
 
     var testView: TestView!
     
+//    var dict: [String:Int] = Dictionary()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +26,23 @@ class ViewController: UIViewController {
 //        test1()
         
         testMutating()
+        let sampleClassInstance = ASampleClass()
+        
+        struct Person {
+            let name: String
+            let age: Int
+        }
+        
+        let xiaoMing = Person(name: "XiaoMing", age: 16)
+        let r = Mirror(reflecting: xiaoMing) // r 是 MirrorType
+        
+        print("xiaoMing 是 \(r.displayStyle!)")
+        
+        print("属性个数:\(r.children.count)")
+        for i in r.children.startIndex..<r.children.endIndex {
+            print("属性名:\(r.children[i].0!)，值:\(r.children[i].1)")
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,4 +127,8 @@ struct Changed {
     mutating func setY(v: Double) {
         self.y = v
     }
+}
+
+struct SomeStruct {
+    
 }

@@ -370,36 +370,36 @@ char* etPuts(char* a,char* b)
 
 +(void)testCallCFunctions
 {
-    [self testAddValueFunction];
-
-    [self testMakeCGRectFunction];
-    
-    [self testMakeFooFunction];
-
-    [self testGetWidth];
-    
-    [self testPointerArgument];
-    
-    [self testNSLog];
-    
-    [self testNSLogV2];
-    
-    [self testCreateNSObject];
-    
-    [self testArray];
+//    [self testAddValueFunction];
+//
+//    [self testMakeCGRectFunction];
+//    
+//    [self testMakeFooFunction];
+//
+//    [self testGetWidth];
+//    
+//    [self testPointerArgument];
+//    
+//    [self testNSLog];
+//    
+//    [self testNSLogV2];
+//    
+//    [self testCreateNSObject];
+//    
+//    [self testArray];
     
     [self testCreateUIView];
     
-    [self testGenerateClass];
-   
-    [self testPackValues];
-    
-    [self testUnpackValue];
+//    [self testGenerateClass];
+//   
+//    [self testPackValues];
 //    
-    [self testJSBuildUI];
-    
-    [self testJSBlock];
+//    [self testUnpackValue];
+////    
+//    [self testJSBuildUI];
 //    
+//    [self testJSBlock];
+//
    
     
  

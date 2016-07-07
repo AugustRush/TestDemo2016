@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97AEC05D1D27FB3C00853D58 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC05C1D27FB3C00853D58 /* main.swift */; };
+		97AEC0641D27FC7B00853D58 /* Assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0631D27FC7B00853D58 /* Assembly.s */; };
+		97AEC0681D28013F00853D58 /* Perform.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0661D28013F00853D58 /* Perform.c */; };
+		97AEC06A1D28019A00853D58 /* ASampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0691D28019A00853D58 /* ASampleClass.swift */; };
+		97AEC09E1D28F3B700853D58 /* ffi_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC08E1D28F3B700853D58 /* ffi_arm64.c */; };
+		97AEC09F1D28F3B700853D58 /* sysv_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC08F1D28F3B700853D58 /* sysv_arm64.S */; };
+		97AEC0A01D28F3B700853D58 /* ffi_armv7.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0911D28F3B700853D58 /* ffi_armv7.c */; };
+		97AEC0A11D28F3B700853D58 /* sysv_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0921D28F3B700853D58 /* sysv_armv7.S */; };
+		97AEC0A21D28F3B700853D58 /* trampoline_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0931D28F3B700853D58 /* trampoline_armv7.S */; };
+		97AEC0A31D28F3B700853D58 /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0951D28F3B700853D58 /* prep_cif.c */; };
+		97AEC0A41D28F3B700853D58 /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0961D28F3B700853D58 /* raw_api.c */; };
+		97AEC0A51D28F3B700853D58 /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0971D28F3B700853D58 /* types.c */; };
+		97AEC0A61D28F3B700853D58 /* darwin64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0991D28F3B700853D58 /* darwin64_x86_64.S */; };
+		97AEC0A71D28F3B700853D58 /* darwin_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC09A1D28F3B700853D58 /* darwin_i386.S */; };
+		97AEC0A81D28F3B700853D58 /* ffi64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC09B1D28F3B700853D58 /* ffi64_x86_64.c */; };
+		97AEC0A91D28F3B700853D58 /* ffi_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC09C1D28F3B700853D58 /* ffi_i386.c */; };
+		97AEC0AA1D28F3B700853D58 /* win32_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC09D1D28F3B700853D58 /* win32_i386.S */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97AEC0571D27FB3C00853D58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97A126801D2A3285007E22C7 /* libTKHooklib.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTKHooklib.so; sourceTree = "<group>"; };
+		97A126811D2A3285007E22C7 /* TKHooklib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHooklib.h; sourceTree = "<group>"; };
+		97A126831D2A3285007E22C7 /* libTKInlineHook64.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTKInlineHook64.so; sourceTree = "<group>"; };
+		97A126841D2A3285007E22C7 /* TKHooklib64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHooklib64.h; sourceTree = "<group>"; };
+		97AEC0591D27FB3C00853D58 /* SwiftAssembly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAssembly; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AEC05C1D27FB3C00853D58 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		97AEC0631D27FC7B00853D58 /* Assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Assembly.s; sourceTree = "<group>"; };
+		97AEC0651D28013F00853D58 /* SwiftAssembly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAssembly-Bridging-Header.h"; sourceTree = "<group>"; };
+		97AEC0661D28013F00853D58 /* Perform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Perform.c; sourceTree = "<group>"; };
+		97AEC0671D28013F00853D58 /* Perform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perform.h; sourceTree = "<group>"; };
+		97AEC0691D28019A00853D58 /* ASampleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASampleClass.swift; sourceTree = "<group>"; };
+		97AEC07C1D28F3B700853D58 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		97AEC07D1D28F3B700853D58 /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		97AEC07E1D28F3B700853D58 /* ffi_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_armv7.h; sourceTree = "<group>"; };
+		97AEC07F1D28F3B700853D58 /* ffi_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_common.h; sourceTree = "<group>"; };
+		97AEC0801D28F3B700853D58 /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		97AEC0811D28F3B700853D58 /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		97AEC0821D28F3B700853D58 /* fficonfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig.h; sourceTree = "<group>"; };
+		97AEC0831D28F3B700853D58 /* fficonfig_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm64.h; sourceTree = "<group>"; };
+		97AEC0841D28F3B700853D58 /* fficonfig_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_armv7.h; sourceTree = "<group>"; };
+		97AEC0851D28F3B700853D58 /* fficonfig_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_i386.h; sourceTree = "<group>"; };
+		97AEC0861D28F3B700853D58 /* fficonfig_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_x86_64.h; sourceTree = "<group>"; };
+		97AEC0871D28F3B700853D58 /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		97AEC0881D28F3B700853D58 /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		97AEC0891D28F3B700853D58 /* ffitarget_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_armv7.h; sourceTree = "<group>"; };
+		97AEC08A1D28F3B700853D58 /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		97AEC08B1D28F3B700853D58 /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		97AEC08E1D28F3B700853D58 /* ffi_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_arm64.c; sourceTree = "<group>"; };
+		97AEC08F1D28F3B700853D58 /* sysv_arm64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_arm64.S; sourceTree = "<group>"; };
+		97AEC0911D28F3B700853D58 /* ffi_armv7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_armv7.c; sourceTree = "<group>"; };
+		97AEC0921D28F3B700853D58 /* sysv_armv7.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_armv7.S; sourceTree = "<group>"; };
+		97AEC0931D28F3B700853D58 /* trampoline_armv7.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = trampoline_armv7.S; sourceTree = "<group>"; };
+		97AEC0951D28F3B700853D58 /* prep_cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prep_cif.c; sourceTree = "<group>"; };
+		97AEC0961D28F3B700853D58 /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
+		97AEC0971D28F3B700853D58 /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
+		97AEC0991D28F3B700853D58 /* darwin64_x86_64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = darwin64_x86_64.S; sourceTree = "<group>"; };
+		97AEC09A1D28F3B700853D58 /* darwin_i386.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = darwin_i386.S; sourceTree = "<group>"; };
+		97AEC09B1D28F3B700853D58 /* ffi64_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi64_x86_64.c; sourceTree = "<group>"; };
+		97AEC09C1D28F3B700853D58 /* ffi_i386.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_i386.c; sourceTree = "<group>"; };
+		97AEC09D1D28F3B700853D58 /* win32_i386.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = win32_i386.S; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97AEC0561D27FB3C00853D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97A1267F1D2A3285007E22C7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				97A126801D2A3285007E22C7 /* libTKHooklib.so */,
+				97A126811D2A3285007E22C7 /* TKHooklib.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		97A126821D2A3285007E22C7 /* utils64 */ = {
+			isa = PBXGroup;
+			children = (
+				97A126831D2A3285007E22C7 /* libTKInlineHook64.so */,
+				97A126841D2A3285007E22C7 /* TKHooklib64.h */,
+			);
+			path = utils64;
+			sourceTree = "<group>";
+		};
+		97AEC0501D27FB3C00853D58 = {
+			isa = PBXGroup;
+			children = (
+				97AEC05B1D27FB3C00853D58 /* SwiftAssembly */,
+				97AEC05A1D27FB3C00853D58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97AEC05A1D27FB3C00853D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC0591D27FB3C00853D58 /* SwiftAssembly */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97AEC05B1D27FB3C00853D58 /* SwiftAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC07A1D28F3B700853D58 /* libffi */,
+				97AEC05C1D27FB3C00853D58 /* main.swift */,
+				97AEC0691D28019A00853D58 /* ASampleClass.swift */,
+				97AEC0661D28013F00853D58 /* Perform.c */,
+				97AEC0671D28013F00853D58 /* Perform.h */,
+				97AEC0631D27FC7B00853D58 /* Assembly.s */,
+				97A1267F1D2A3285007E22C7 /* utils */,
+				97A126821D2A3285007E22C7 /* utils64 */,
+				97AEC0651D28013F00853D58 /* SwiftAssembly-Bridging-Header.h */,
+			);
+			path = SwiftAssembly;
+			sourceTree = "<group>";
+		};
+		97AEC07A1D28F3B700853D58 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC07B1D28F3B700853D58 /* headers */,
+				97AEC08C1D28F3B700853D58 /* src */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		97AEC07B1D28F3B700853D58 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC07C1D28F3B700853D58 /* ffi.h */,
+				97AEC07D1D28F3B700853D58 /* ffi_arm64.h */,
+				97AEC07E1D28F3B700853D58 /* ffi_armv7.h */,
+				97AEC07F1D28F3B700853D58 /* ffi_common.h */,
+				97AEC0801D28F3B700853D58 /* ffi_i386.h */,
+				97AEC0811D28F3B700853D58 /* ffi_x86_64.h */,
+				97AEC0821D28F3B700853D58 /* fficonfig.h */,
+				97AEC0831D28F3B700853D58 /* fficonfig_arm64.h */,
+				97AEC0841D28F3B700853D58 /* fficonfig_armv7.h */,
+				97AEC0851D28F3B700853D58 /* fficonfig_i386.h */,
+				97AEC0861D28F3B700853D58 /* fficonfig_x86_64.h */,
+				97AEC0871D28F3B700853D58 /* ffitarget.h */,
+				97AEC0881D28F3B700853D58 /* ffitarget_arm64.h */,
+				97AEC0891D28F3B700853D58 /* ffitarget_armv7.h */,
+				97AEC08A1D28F3B700853D58 /* ffitarget_i386.h */,
+				97AEC08B1D28F3B700853D58 /* ffitarget_x86_64.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		97AEC08C1D28F3B700853D58 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC08D1D28F3B700853D58 /* aarch64 */,
+				97AEC0901D28F3B700853D58 /* arm */,
+				97AEC0941D28F3B700853D58 /* common */,
+				97AEC0981D28F3B700853D58 /* x86 */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		97AEC08D1D28F3B700853D58 /* aarch64 */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC08E1D28F3B700853D58 /* ffi_arm64.c */,
+				97AEC08F1D28F3B700853D58 /* sysv_arm64.S */,
+			);
+			path = aarch64;
+			sourceTree = "<group>";
+		};
+		97AEC0901D28F3B700853D58 /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC0911D28F3B700853D58 /* ffi_armv7.c */,
+				97AEC0921D28F3B700853D58 /* sysv_armv7.S */,
+				97AEC0931D28F3B700853D58 /* trampoline_armv7.S */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		97AEC0941D28F3B700853D58 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC0951D28F3B700853D58 /* prep_cif.c */,
+				97AEC0961D28F3B700853D58 /* raw_api.c */,
+				97AEC0971D28F3B700853D58 /* types.c */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		97AEC0981D28F3B700853D58 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				97AEC0991D28F3B700853D58 /* darwin64_x86_64.S */,
+				97AEC09A1D28F3B700853D58 /* darwin_i386.S */,
+				97AEC09B1D28F3B700853D58 /* ffi64_x86_64.c */,
+				97AEC09C1D28F3B700853D58 /* ffi_i386.c */,
+				97AEC09D1D28F3B700853D58 /* win32_i386.S */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97AEC0581D27FB3C00853D58 /* SwiftAssembly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AEC0601D27FB3C00853D58 /* Build configuration list for PBXNativeTarget "SwiftAssembly" */;
+			buildPhases = (
+				97AEC0551D27FB3C00853D58 /* Sources */,
+				97AEC0561D27FB3C00853D58 /* Frameworks */,
+				97AEC0571D27FB3C00853D58 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAssembly;
+			productName = SwiftAssembly;
+			productReference = 97AEC0591D27FB3C00853D58 /* SwiftAssembly */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97AEC0511D27FB3C00853D58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = August;
+				TargetAttributes = {
+					97AEC0581D27FB3C00853D58 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 97AEC0541D27FB3C00853D58 /* Build configuration list for PBXProject "SwiftAssembly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 97AEC0501D27FB3C00853D58;
+			productRefGroup = 97AEC05A1D27FB3C00853D58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97AEC0581D27FB3C00853D58 /* SwiftAssembly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97AEC0551D27FB3C00853D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AEC09F1D28F3B700853D58 /* sysv_arm64.S in Sources */,
+				97AEC0A41D28F3B700853D58 /* raw_api.c in Sources */,
+				97AEC05D1D27FB3C00853D58 /* main.swift in Sources */,
+				97AEC0AA1D28F3B700853D58 /* win32_i386.S in Sources */,
+				97AEC0641D27FC7B00853D58 /* Assembly.s in Sources */,
+				97AEC0A11D28F3B700853D58 /* sysv_armv7.S in Sources */,
+				97AEC0A31D28F3B700853D58 /* prep_cif.c in Sources */,
+				97AEC0A21D28F3B700853D58 /* trampoline_armv7.S in Sources */,
+				97AEC06A1D28019A00853D58 /* ASampleClass.swift in Sources */,
+				97AEC0A01D28F3B700853D58 /* ffi_armv7.c in Sources */,
+				97AEC09E1D28F3B700853D58 /* ffi_arm64.c in Sources */,
+				97AEC0681D28013F00853D58 /* Perform.c in Sources */,
+				97AEC0A81D28F3B700853D58 /* ffi64_x86_64.c in Sources */,
+				97AEC0A51D28F3B700853D58 /* types.c in Sources */,
+				97AEC0A91D28F3B700853D58 /* ffi_i386.c in Sources */,
+				97AEC0A61D28F3B700853D58 /* darwin64_x86_64.S in Sources */,
+				97AEC0A71D28F3B700853D58 /* darwin_i386.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		97AEC05E1D27FB3C00853D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97AEC05F1D27FB3C00853D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		97AEC0611D27FB3C00853D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAssembly/SwiftAssembly-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97AEC0621D27FB3C00853D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAssembly/SwiftAssembly-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97AEC0541D27FB3C00853D58 /* Build configuration list for PBXProject "SwiftAssembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AEC05E1D27FB3C00853D58 /* Debug */,
+				97AEC05F1D27FB3C00853D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AEC0601D27FB3C00853D58 /* Build configuration list for PBXNativeTarget "SwiftAssembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AEC0611D27FB3C00853D58 /* Debug */,
+				97AEC0621D27FB3C00853D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97AEC0511D27FB3C00853D58 /* Project object */;
+}

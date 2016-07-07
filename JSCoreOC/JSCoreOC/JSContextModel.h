@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 
-#define Test(name) (@#name)
-
 @interface JSContextModel : NSObject
 
 + (instancetype)shared;

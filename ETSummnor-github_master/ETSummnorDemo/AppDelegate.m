@@ -61,7 +61,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
 //    
-//    [ETSummonerTest testCallCFunctions];
+    [ETSummonerTest testCallCFunctions];
 //
 //    return YES;
 //    void* value = dlsym(RTLD_DEFAULT, "UICollectionElementKindSectionHeader");
@@ -80,13 +80,13 @@
     
     
     
-    UIViewController* rootViewController = [self loadJSCollectionViewController];
-
-    _rootWindow = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    
-    _rootWindow.rootViewController = rootViewController;
-    
-    [_rootWindow makeKeyAndVisible];
+//    UIViewController* rootViewController = [self loadJSCollectionViewController];
+//
+//    _rootWindow = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+//    
+//    _rootWindow.rootViewController = rootViewController;
+//    
+//    [_rootWindow makeKeyAndVisible];
     
     return YES;
 }

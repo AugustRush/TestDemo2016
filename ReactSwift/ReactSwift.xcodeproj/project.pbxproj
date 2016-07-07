@@ -14,6 +14,8 @@
 		976CC89A1D1B832F00476D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976CC8981D1B832F00476D77 /* LaunchScreen.storyboard */; };
 		976CC8A51D1B832F00476D77 /* ReactSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976CC8A41D1B832F00476D77 /* ReactSwiftTests.swift */; };
 		976CC8B01D1B832F00476D77 /* ReactSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976CC8AF1D1B832F00476D77 /* ReactSwiftUITests.swift */; };
+		97AEC0721D28751700853D58 /* ASampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0711D28751700853D58 /* ASampleClass.swift */; };
+		97AEC0761D28754600853D58 /* Perform.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0741D28754600853D58 /* Perform.c */; };
 		97DD65CD1D22487900255F40 /* FooTest.s in Sources */ = {isa = PBXBuildFile; fileRef = 97DD65CC1D22487900255F40 /* FooTest.s */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,10 @@
 		976CC8AB1D1B832F00476D77 /* ReactSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		976CC8AF1D1B832F00476D77 /* ReactSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactSwiftUITests.swift; sourceTree = "<group>"; };
 		976CC8B11D1B832F00476D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97AEC0711D28751700853D58 /* ASampleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASampleClass.swift; sourceTree = "<group>"; };
+		97AEC0731D28754500853D58 /* ReactSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		97AEC0741D28754600853D58 /* Perform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Perform.c; sourceTree = "<group>"; };
+		97AEC0751D28754600853D58 /* Perform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perform.h; sourceTree = "<group>"; };
 		97DD65CC1D22487900255F40 /* FooTest.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = FooTest.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,10 +108,14 @@
 				976CC88F1D1B832F00476D77 /* AppDelegate.swift */,
 				976CC8911D1B832F00476D77 /* ViewController.swift */,
 				97DD65CC1D22487900255F40 /* FooTest.s */,
+				97AEC0711D28751700853D58 /* ASampleClass.swift */,
+				97AEC0741D28754600853D58 /* Perform.c */,
+				97AEC0751D28754600853D58 /* Perform.h */,
 				976CC8931D1B832F00476D77 /* Main.storyboard */,
 				976CC8961D1B832F00476D77 /* Assets.xcassets */,
 				976CC8981D1B832F00476D77 /* LaunchScreen.storyboard */,
 				976CC89B1D1B832F00476D77 /* Info.plist */,
+				97AEC0731D28754500853D58 /* ReactSwift-Bridging-Header.h */,
 			);
 			path = ReactSwift;
 			sourceTree = "<group>";
@@ -261,7 +271,9 @@
 			files = (
 				976CC8921D1B832F00476D77 /* ViewController.swift in Sources */,
 				97DD65CD1D22487900255F40 /* FooTest.s in Sources */,
+				97AEC0721D28751700853D58 /* ASampleClass.swift in Sources */,
 				976CC8901D1B832F00476D77 /* AppDelegate.swift in Sources */,
+				97AEC0761D28754600853D58 /* Perform.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AR.ReactSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactSwift/ReactSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -416,10 +431,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AR.ReactSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactSwift/ReactSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};

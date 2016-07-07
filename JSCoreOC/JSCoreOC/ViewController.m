@@ -43,9 +43,9 @@
   //    [self JSExportTest];
   //    [self ocCalljs];
 
-  //    [self JSCreateView];
+      [self JSCreateView];
 
-  [self customTest];
+//  [self customTest];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97DD65E11D22832000255F40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD65E01D22832000255F40 /* main.m */; };
+		97DD65E41D22832000255F40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD65E31D22832000255F40 /* AppDelegate.m */; };
+		97DD65E71D22832000255F40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD65E61D22832000255F40 /* ViewController.m */; };
+		97DD65EA1D22832000255F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD65E81D22832000255F40 /* Main.storyboard */; };
+		97DD65EC1D22832000255F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DD65EB1D22832000255F40 /* Assets.xcassets */; };
+		97DD65EF1D22832000255F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD65ED1D22832000255F40 /* LaunchScreen.storyboard */; };
+		97DD661A1D22848C00255F40 /* ffi_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD660A1D22848C00255F40 /* ffi_arm64.c */; };
+		97DD661B1D22848C00255F40 /* sysv_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD660B1D22848C00255F40 /* sysv_arm64.S */; };
+		97DD661C1D22848C00255F40 /* ffi_armv7.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD660D1D22848C00255F40 /* ffi_armv7.c */; };
+		97DD661D1D22848C00255F40 /* sysv_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD660E1D22848C00255F40 /* sysv_armv7.S */; };
+		97DD661E1D22848C00255F40 /* trampoline_armv7.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD660F1D22848C00255F40 /* trampoline_armv7.S */; };
+		97DD661F1D22848C00255F40 /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66111D22848C00255F40 /* prep_cif.c */; };
+		97DD66201D22848C00255F40 /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66121D22848C00255F40 /* raw_api.c */; };
+		97DD66211D22848C00255F40 /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66131D22848C00255F40 /* types.c */; };
+		97DD66221D22848C00255F40 /* darwin64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66151D22848C00255F40 /* darwin64_x86_64.S */; };
+		97DD66231D22848C00255F40 /* darwin_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66161D22848C00255F40 /* darwin_i386.S */; };
+		97DD66241D22848C00255F40 /* ffi64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66171D22848C00255F40 /* ffi64_x86_64.c */; };
+		97DD66251D22848C00255F40 /* ffi_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66181D22848C00255F40 /* ffi_i386.c */; };
+		97DD66261D22848C00255F40 /* win32_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 97DD66191D22848C00255F40 /* win32_i386.S */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		97DD65DC1D22832000255F40 /* LibffiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibffiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97DD65E01D22832000255F40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97DD65E21D22832000255F40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97DD65E31D22832000255F40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97DD65E51D22832000255F40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97DD65E61D22832000255F40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97DD65E91D22832000255F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97DD65EB1D22832000255F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97DD65EE1D22832000255F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97DD65F01D22832000255F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97DD65F81D22848C00255F40 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		97DD65F91D22848C00255F40 /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		97DD65FA1D22848C00255F40 /* ffi_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_armv7.h; sourceTree = "<group>"; };
+		97DD65FB1D22848C00255F40 /* ffi_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_common.h; sourceTree = "<group>"; };
+		97DD65FC1D22848C00255F40 /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		97DD65FD1D22848C00255F40 /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		97DD65FE1D22848C00255F40 /* fficonfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig.h; sourceTree = "<group>"; };
+		97DD65FF1D22848C00255F40 /* fficonfig_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_arm64.h; sourceTree = "<group>"; };
+		97DD66001D22848C00255F40 /* fficonfig_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_armv7.h; sourceTree = "<group>"; };
+		97DD66011D22848C00255F40 /* fficonfig_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_i386.h; sourceTree = "<group>"; };
+		97DD66021D22848C00255F40 /* fficonfig_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fficonfig_x86_64.h; sourceTree = "<group>"; };
+		97DD66031D22848C00255F40 /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		97DD66041D22848C00255F40 /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		97DD66051D22848C00255F40 /* ffitarget_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_armv7.h; sourceTree = "<group>"; };
+		97DD66061D22848C00255F40 /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		97DD66071D22848C00255F40 /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		97DD660A1D22848C00255F40 /* ffi_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_arm64.c; sourceTree = "<group>"; };
+		97DD660B1D22848C00255F40 /* sysv_arm64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_arm64.S; sourceTree = "<group>"; };
+		97DD660D1D22848C00255F40 /* ffi_armv7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_armv7.c; sourceTree = "<group>"; };
+		97DD660E1D22848C00255F40 /* sysv_armv7.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_armv7.S; sourceTree = "<group>"; };
+		97DD660F1D22848C00255F40 /* trampoline_armv7.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = trampoline_armv7.S; sourceTree = "<group>"; };
+		97DD66111D22848C00255F40 /* prep_cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prep_cif.c; sourceTree = "<group>"; };
+		97DD66121D22848C00255F40 /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
+		97DD66131D22848C00255F40 /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
+		97DD66151D22848C00255F40 /* darwin64_x86_64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = darwin64_x86_64.S; sourceTree = "<group>"; };
+		97DD66161D22848C00255F40 /* darwin_i386.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = darwin_i386.S; sourceTree = "<group>"; };
+		97DD66171D22848C00255F40 /* ffi64_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi64_x86_64.c; sourceTree = "<group>"; };
+		97DD66181D22848C00255F40 /* ffi_i386.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi_i386.c; sourceTree = "<group>"; };
+		97DD66191D22848C00255F40 /* win32_i386.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = win32_i386.S; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97DD65D91D22832000255F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97DD65D31D22832000255F40 = {
+			isa = PBXGroup;
+			children = (
+				97DD65DE1D22832000255F40 /* LibffiDemo */,
+				97DD65DD1D22832000255F40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97DD65DD1D22832000255F40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97DD65DC1D22832000255F40 /* LibffiDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97DD65DE1D22832000255F40 /* LibffiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				97DD65F61D22848C00255F40 /* libffi */,
+				97DD65E21D22832000255F40 /* AppDelegate.h */,
+				97DD65E31D22832000255F40 /* AppDelegate.m */,
+				97DD65E51D22832000255F40 /* ViewController.h */,
+				97DD65E61D22832000255F40 /* ViewController.m */,
+				97DD65E81D22832000255F40 /* Main.storyboard */,
+				97DD65EB1D22832000255F40 /* Assets.xcassets */,
+				97DD65ED1D22832000255F40 /* LaunchScreen.storyboard */,
+				97DD65F01D22832000255F40 /* Info.plist */,
+				97DD65DF1D22832000255F40 /* Supporting Files */,
+			);
+			path = LibffiDemo;
+			sourceTree = "<group>";
+		};
+		97DD65DF1D22832000255F40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97DD65E01D22832000255F40 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97DD65F61D22848C00255F40 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				97DD65F71D22848C00255F40 /* headers */,
+				97DD66081D22848C00255F40 /* src */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		97DD65F71D22848C00255F40 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				97DD65F81D22848C00255F40 /* ffi.h */,
+				97DD65F91D22848C00255F40 /* ffi_arm64.h */,
+				97DD65FA1D22848C00255F40 /* ffi_armv7.h */,
+				97DD65FB1D22848C00255F40 /* ffi_common.h */,
+				97DD65FC1D22848C00255F40 /* ffi_i386.h */,
+				97DD65FD1D22848C00255F40 /* ffi_x86_64.h */,
+				97DD65FE1D22848C00255F40 /* fficonfig.h */,
+				97DD65FF1D22848C00255F40 /* fficonfig_arm64.h */,
+				97DD66001D22848C00255F40 /* fficonfig_armv7.h */,
+				97DD66011D22848C00255F40 /* fficonfig_i386.h */,
+				97DD66021D22848C00255F40 /* fficonfig_x86_64.h */,
+				97DD66031D22848C00255F40 /* ffitarget.h */,
+				97DD66041D22848C00255F40 /* ffitarget_arm64.h */,
+				97DD66051D22848C00255F40 /* ffitarget_armv7.h */,
+				97DD66061D22848C00255F40 /* ffitarget_i386.h */,
+				97DD66071D22848C00255F40 /* ffitarget_x86_64.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		97DD66081D22848C00255F40 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				97DD66091D22848C00255F40 /* aarch64 */,
+				97DD660C1D22848C00255F40 /* arm */,
+				97DD66101D22848C00255F40 /* common */,
+				97DD66141D22848C00255F40 /* x86 */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		97DD66091D22848C00255F40 /* aarch64 */ = {
+			isa = PBXGroup;
+			children = (
+				97DD660A1D22848C00255F40 /* ffi_arm64.c */,
+				97DD660B1D22848C00255F40 /* sysv_arm64.S */,
+			);
+			path = aarch64;
+			sourceTree = "<group>";
+		};
+		97DD660C1D22848C00255F40 /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				97DD660D1D22848C00255F40 /* ffi_armv7.c */,
+				97DD660E1D22848C00255F40 /* sysv_armv7.S */,
+				97DD660F1D22848C00255F40 /* trampoline_armv7.S */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		97DD66101D22848C00255F40 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				97DD66111D22848C00255F40 /* prep_cif.c */,
+				97DD66121D22848C00255F40 /* raw_api.c */,
+				97DD66131D22848C00255F40 /* types.c */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		97DD66141D22848C00255F40 /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				97DD66151D22848C00255F40 /* darwin64_x86_64.S */,
+				97DD66161D22848C00255F40 /* darwin_i386.S */,
+				97DD66171D22848C00255F40 /* ffi64_x86_64.c */,
+				97DD66181D22848C00255F40 /* ffi_i386.c */,
+				97DD66191D22848C00255F40 /* win32_i386.S */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97DD65DB1D22832000255F40 /* LibffiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97DD65F31D22832000255F40 /* Build configuration list for PBXNativeTarget "LibffiDemo" */;
+			buildPhases = (
+				97DD65D81D22832000255F40 /* Sources */,
+				97DD65D91D22832000255F40 /* Frameworks */,
+				97DD65DA1D22832000255F40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibffiDemo;
+			productName = LibffiDemo;
+			productReference = 97DD65DC1D22832000255F40 /* LibffiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97DD65D41D22832000255F40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = August;
+				TargetAttributes = {
+					97DD65DB1D22832000255F40 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 97DD65D71D22832000255F40 /* Build configuration list for PBXProject "LibffiDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97DD65D31D22832000255F40;
+			productRefGroup = 97DD65DD1D22832000255F40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97DD65DB1D22832000255F40 /* LibffiDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97DD65DA1D22832000255F40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97DD65EF1D22832000255F40 /* LaunchScreen.storyboard in Resources */,
+				97DD65EC1D22832000255F40 /* Assets.xcassets in Resources */,
+				97DD65EA1D22832000255F40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97DD65D81D22832000255F40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97DD66241D22848C00255F40 /* ffi64_x86_64.c in Sources */,
+				97DD65E71D22832000255F40 /* ViewController.m in Sources */,
+				97DD66211D22848C00255F40 /* types.c in Sources */,
+				97DD661D1D22848C00255F40 /* sysv_armv7.S in Sources */,
+				97DD66221D22848C00255F40 /* darwin64_x86_64.S in Sources */,
+				97DD661E1D22848C00255F40 /* trampoline_armv7.S in Sources */,
+				97DD66201D22848C00255F40 /* raw_api.c in Sources */,
+				97DD661C1D22848C00255F40 /* ffi_armv7.c in Sources */,
+				97DD661B1D22848C00255F40 /* sysv_arm64.S in Sources */,
+				97DD66261D22848C00255F40 /* win32_i386.S in Sources */,
+				97DD66231D22848C00255F40 /* darwin_i386.S in Sources */,
+				97DD661F1D22848C00255F40 /* prep_cif.c in Sources */,
+				97DD66251D22848C00255F40 /* ffi_i386.c in Sources */,
+				97DD65E41D22832000255F40 /* AppDelegate.m in Sources */,
+				97DD661A1D22848C00255F40 /* ffi_arm64.c in Sources */,
+				97DD65E11D22832000255F40 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97DD65E81D22832000255F40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97DD65E91D22832000255F40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97DD65ED1D22832000255F40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97DD65EE1D22832000255F40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97DD65F11D22832000255F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97DD65F21D22832000255F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97DD65F41D22832000255F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				INFOPLIST_FILE = LibffiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.LibffiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97DD65F51D22832000255F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				INFOPLIST_FILE = LibffiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.LibffiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97DD65D71D22832000255F40 /* Build configuration list for PBXProject "LibffiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97DD65F11D22832000255F40 /* Debug */,
+				97DD65F21D22832000255F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97DD65F31D22832000255F40 /* Build configuration list for PBXNativeTarget "LibffiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97DD65F41D22832000255F40 /* Debug */,
+				97DD65F51D22832000255F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97DD65D41D22832000255F40 /* Project object */;
+}

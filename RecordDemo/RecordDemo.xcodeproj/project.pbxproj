@@ -17,6 +17,7 @@
 		975FDF0C1D15987A00892B74 /* MemoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975FDF0A1D15987A00892B74 /* MemoryRecord.swift */; };
 		975FDF0D1D15987A00892B74 /* Mutext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975FDF0B1D15987A00892B74 /* Mutext.swift */; };
 		975FDF491D1681D200892B74 /* LRUMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975FDF481D1681D100892B74 /* LRUMap.swift */; };
+		97A1267C1D2A05A6007E22C7 /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1267B1D2A05A6007E22C7 /* Semaphore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		975FDF0A1D15987A00892B74 /* MemoryRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryRecord.swift; sourceTree = "<group>"; };
 		975FDF0B1D15987A00892B74 /* Mutext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutext.swift; sourceTree = "<group>"; };
 		975FDF481D1681D100892B74 /* LRUMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUMap.swift; sourceTree = "<group>"; };
+		97A1267B1D2A05A6007E22C7 /* Semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semaphore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				975FDF0A1D15987A00892B74 /* MemoryRecord.swift */,
 				975FDF481D1681D100892B74 /* LRUMap.swift */,
 				975FDF0B1D15987A00892B74 /* Mutext.swift */,
+				97A1267B1D2A05A6007E22C7 /* Semaphore.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				975FDF0C1D15987A00892B74 /* MemoryRecord.swift in Sources */,
 				975FDF0D1D15987A00892B74 /* Mutext.swift in Sources */,
 				975FDF491D1681D200892B74 /* LRUMap.swift in Sources */,
+				97A1267C1D2A05A6007E22C7 /* Semaphore.swift in Sources */,
 				975FDEDC1D15982400892B74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
