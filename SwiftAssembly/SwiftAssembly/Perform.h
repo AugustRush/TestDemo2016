@@ -15,10 +15,6 @@ typedef struct objc_object *id;
 
     //https://en.wikipedia.org/wiki/Name_mangling#Swift
 id performFunction(const char * manglingSymbol, id target,size_t returnValueSize);
-
-//test
-int getAge(void);
-int (*original_getAge)(void);
-int replaced_getAge(void);
+char * char_performFunction(const char * manglingSymbol, id target,size_t returnValueSize);
 
 #endif /* perform_h */

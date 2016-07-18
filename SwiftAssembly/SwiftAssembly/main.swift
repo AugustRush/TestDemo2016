@@ -30,16 +30,21 @@ let sampleClassInstance = ASampleClass()
     return NSNumber(double: 3.1416926)
 }
 
-let a = performFunction("_TFC13SwiftAssembly12ASampleClass13aTestFunctionfT_SS", sampleClassInstance,sizeof(String))
+print("NSString size is \(sizeof(NSString))")
+print("String size is \(sizeof(String))")
+
+
+let a = char_performFunction("_TFC13SwiftAssembly12ASampleClass13aTestFunctionfT_SS", sampleClassInstance,sizeof(String))
 let b = performFunction("_TFC13SwiftAssembly12ASampleClass13bTestFunctionfT_CSo8NSString", sampleClassInstance,sizeof(NSString))
 let c = performFunction("say_hello", nil, sizeof(NSNumber))
 let d = performFunction("notsay_hello", nil, sizeof(NSNumber))
 
-//print("a is \(a)")
+let str = String(UTF8String: UnsafePointer<CChar>(a))
+
+print("a is \(str!)")
 print("b is \(b)")
 print("c is \(c)")
 print("d is \(d)")
-
 //func typename (thing:Any) -> String{
 //    let name = _stdlib_getTypeName(thing)
 //    let demangleName = _stdlib_demangleName(name)

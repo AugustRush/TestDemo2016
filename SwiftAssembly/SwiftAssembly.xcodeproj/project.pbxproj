@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9728F4091D2F79650071D312 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 9728F4071D2F79650071D312 /* fishhook.c */; };
 		97AEC05D1D27FB3C00853D58 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC05C1D27FB3C00853D58 /* main.swift */; };
 		97AEC0641D27FC7B00853D58 /* Assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0631D27FC7B00853D58 /* Assembly.s */; };
 		97AEC0681D28013F00853D58 /* Perform.c in Sources */ = {isa = PBXBuildFile; fileRef = 97AEC0661D28013F00853D58 /* Perform.c */; };
@@ -39,10 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		97A126801D2A3285007E22C7 /* libTKHooklib.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTKHooklib.so; sourceTree = "<group>"; };
-		97A126811D2A3285007E22C7 /* TKHooklib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHooklib.h; sourceTree = "<group>"; };
-		97A126831D2A3285007E22C7 /* libTKInlineHook64.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTKInlineHook64.so; sourceTree = "<group>"; };
-		97A126841D2A3285007E22C7 /* TKHooklib64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHooklib64.h; sourceTree = "<group>"; };
+		9728F4071D2F79650071D312 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		9728F4081D2F79650071D312 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		97AEC0591D27FB3C00853D58 /* SwiftAssembly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAssembly; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AEC05C1D27FB3C00853D58 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		97AEC0631D27FC7B00853D58 /* Assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Assembly.s; sourceTree = "<group>"; };
@@ -92,24 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97A1267F1D2A3285007E22C7 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				97A126801D2A3285007E22C7 /* libTKHooklib.so */,
-				97A126811D2A3285007E22C7 /* TKHooklib.h */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		97A126821D2A3285007E22C7 /* utils64 */ = {
-			isa = PBXGroup;
-			children = (
-				97A126831D2A3285007E22C7 /* libTKInlineHook64.so */,
-				97A126841D2A3285007E22C7 /* TKHooklib64.h */,
-			);
-			path = utils64;
-			sourceTree = "<group>";
-		};
 		97AEC0501D27FB3C00853D58 = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +115,9 @@
 				97AEC0691D28019A00853D58 /* ASampleClass.swift */,
 				97AEC0661D28013F00853D58 /* Perform.c */,
 				97AEC0671D28013F00853D58 /* Perform.h */,
+				9728F4071D2F79650071D312 /* fishhook.c */,
+				9728F4081D2F79650071D312 /* fishhook.h */,
 				97AEC0631D27FC7B00853D58 /* Assembly.s */,
-				97A1267F1D2A3285007E22C7 /* utils */,
-				97A126821D2A3285007E22C7 /* utils64 */,
 				97AEC0651D28013F00853D58 /* SwiftAssembly-Bridging-Header.h */,
 			);
 			path = SwiftAssembly;
@@ -287,6 +268,7 @@
 				97AEC0A41D28F3B700853D58 /* raw_api.c in Sources */,
 				97AEC05D1D27FB3C00853D58 /* main.swift in Sources */,
 				97AEC0AA1D28F3B700853D58 /* win32_i386.S in Sources */,
+				9728F4091D2F79650071D312 /* fishhook.c in Sources */,
 				97AEC0641D27FC7B00853D58 /* Assembly.s in Sources */,
 				97AEC0A11D28F3B700853D58 /* sysv_armv7.S in Sources */,
 				97AEC0A31D28F3B700853D58 /* prep_cif.c in Sources */,

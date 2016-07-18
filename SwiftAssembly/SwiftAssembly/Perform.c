@@ -12,19 +12,10 @@
 #include <dlfcn.h>
 #include "ffi.h"
 #import <objc/runtime.h>
-#include "TKHooklib64.h"
-//#include "TKHooklib.h"
+#include "fishhook.h"
 
-int getAge(void)
-{
-    return 21;
-}
 
-int (*original_getAge)(void);
-int replaced_getAge(void) {
-    return 99;
-}
-
+// ///////////
 id performFunction(const char * manglingSymbol, id target,size_t returnValueSize) {
     id (*functionImplementation)(id);
     *(void **) (&functionImplementation) = dlsym(RTLD_DEFAULT, manglingSymbol);
@@ -41,11 +32,24 @@ id performFunction(const char * manglingSymbol, id target,size_t returnValueSize
 //        if (status == FFI_OK) {
 //            ffi_call(&cif, (void *)functionImplementation, returnV, paramaters);
 //        }
-//        return returnV;
-        void *rv = functionImplementation(target)
+//        return *(void **)returnV;
         return functionImplementation(target); // <--- call the function
     }
     return NULL;
 }
 
+char * char_performFunction(const char * manglingSymbol, id target,size_t returnValueSize) {
+    char * (*functionImplementation)(id);
+    *(void **) (&functionImplementation) = dlsym(RTLD_DEFAULT, manglingSymbol);
+    char *error;
+    
+    if ((error = dlerror()) != NULL)  {
+        printf("Method not found \n");
+    } else {
+        char *rv = functionImplementation(target);
+        return  rv;// <--- call the function
+    }
+    return NULL;
+
+}
 
