@@ -1,0 +1,12 @@
+FAQ
+===
+
+Immediately after setting new data, I'm getting multiple callbacks that a model has changed. What's going on?
+-------------------------------------------------------------------------------------------------------------
+
+The best way to debug this is to set a breakpoint in the `ConsistencyManagerDelegate` debug method. This will show you which model is changing. This particular bug sometimes occurs when you have data that is inconsistent within one model. So you may have a model with two children with the same ID but different data. This will immediately cause the consistency manager to update one of these children with the other. You should fix your data so it starts out in a consistent way.
+
+If my models don't use projections, don't I need to return more data than I need?
+---------------------------------------------------------------------------------
+
+Possibly, but there are ways of modeling in which total size and duplicated data are reduced. You can use composition to reduce the additional data. See the Alternatives section of :doc:`055_projections` for more information.

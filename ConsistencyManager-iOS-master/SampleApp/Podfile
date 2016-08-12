@@ -1,0 +1,5 @@
+use_frameworks!
+
+target "ConsistencyManagerDemo" do
+	pod 'ConsistencyManager', :path => '..'
+end
