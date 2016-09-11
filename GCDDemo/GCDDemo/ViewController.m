@@ -36,8 +36,8 @@
     _condition = [[NSCondition alloc] init];
     _products = @[].mutableCopy;
     
-//      [self testSemaphoreLock];
-  [self testPhreadMutextLock];
+      [self testSemaphoreLock];
+//  [self testPhreadMutextLock];
 }
 
 #pragma mark - private methods
