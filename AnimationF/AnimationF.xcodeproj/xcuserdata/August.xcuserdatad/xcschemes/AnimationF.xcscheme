@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "979FF89A1D1294A9005A3DA0"
-               BuildableName = "AsyncLabel.app"
-               BlueprintName = "AsyncLabel"
-               ReferencedContainer = "container:AsyncLabel.xcodeproj">
+               BlueprintIdentifier = "97C0495E1DADE86F0024CD65"
+               BuildableName = "AnimationF.app"
+               BlueprintName = "AnimationF"
+               ReferencedContainer = "container:AnimationF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "979FF8B31D1294A9005A3DA0"
-               BuildableName = "AsyncLabelTests.xctest"
-               BlueprintName = "AsyncLabelTests"
-               ReferencedContainer = "container:AsyncLabel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "979FF8BE1D1294A9005A3DA0"
-               BuildableName = "AsyncLabelUITests.xctest"
-               BlueprintName = "AsyncLabelUITests"
-               ReferencedContainer = "container:AsyncLabel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "979FF89A1D1294A9005A3DA0"
-            BuildableName = "AsyncLabel.app"
-            BlueprintName = "AsyncLabel"
-            ReferencedContainer = "container:AsyncLabel.xcodeproj">
+            BlueprintIdentifier = "97C0495E1DADE86F0024CD65"
+            BuildableName = "AnimationF.app"
+            BlueprintName = "AnimationF"
+            ReferencedContainer = "container:AnimationF.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "979FF89A1D1294A9005A3DA0"
-            BuildableName = "AsyncLabel.app"
-            BlueprintName = "AsyncLabel"
-            ReferencedContainer = "container:AsyncLabel.xcodeproj">
+            BlueprintIdentifier = "97C0495E1DADE86F0024CD65"
+            BuildableName = "AnimationF.app"
+            BlueprintName = "AnimationF"
+            ReferencedContainer = "container:AnimationF.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "979FF89A1D1294A9005A3DA0"
-            BuildableName = "AsyncLabel.app"
-            BlueprintName = "AsyncLabel"
-            ReferencedContainer = "container:AsyncLabel.xcodeproj">
+            BlueprintIdentifier = "97C0495E1DADE86F0024CD65"
+            BuildableName = "AnimationF.app"
+            BlueprintName = "AnimationF"
+            ReferencedContainer = "container:AnimationF.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

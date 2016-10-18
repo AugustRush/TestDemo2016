@@ -176,7 +176,7 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSLog(@"asdasd");
         CGFloat width = CGRectGetWidth(rect);
         CGFloat height = CGRectGetHeight(rect);
