@@ -30,13 +30,13 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
-
-  [self setUp];
-
-    _condition = [[NSCondition alloc] init];
-    _products = @[].mutableCopy;
     
-      [self testSemaphoreLock];
+//  [self setUp];
+//
+//    _condition = [[NSCondition alloc] init];
+//    _products = @[].mutableCopy;
+//    
+//      [self testSemaphoreLock];
 //  [self testPhreadMutextLock];
 }
 

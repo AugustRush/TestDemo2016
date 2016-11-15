@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-L0-0pw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.4820429859" green="0.37749514340000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgz-qr-aet">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="refresh" id="JIp-r4-3DS">
+                                        <connections>
+                                            <action selector="reload" destination="uSR-L0-0pw" id="598-rI-LgA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="yvu-x0-A6m"/>
+                                    <barButtonItem style="plain" systemItem="undo" id="bn6-j9-0a1">
+                                        <connections>
+                                            <action selector="goBack" destination="uSR-L0-0pw" id="4vc-hj-JFW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="BOr-PR-tXH"/>
+                                    <barButtonItem systemItem="redo" id="5VJ-YX-6dt">
+                                        <connections>
+                                            <action selector="goForward" destination="uSR-L0-0pw" id="wtA-zb-wco"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bgz-qr-aet" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="0fv-5L-voO"/>
+                            <constraint firstItem="uSR-L0-0pw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4FZ-Nc-qne"/>
+                            <constraint firstItem="uSR-L0-0pw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="J1y-8G-XHI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bgz-qr-aet" secondAttribute="bottom" id="KWL-jr-bO8"/>
+                            <constraint firstAttribute="trailing" secondItem="uSR-L0-0pw" secondAttribute="trailing" id="Ogc-vx-OO7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uSR-L0-0pw" secondAttribute="bottom" constant="100" id="h2T-Wu-APP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bgz-qr-aet" secondAttribute="trailing" constant="-16" id="zF0-ND-78k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="uSR-L0-0pw" id="Ul4-L2-DGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

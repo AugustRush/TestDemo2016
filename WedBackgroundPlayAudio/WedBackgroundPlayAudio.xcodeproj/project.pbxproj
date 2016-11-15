@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		976DF94C1DD2CC31000AB320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 976DF94B1DD2CC31000AB320 /* main.m */; };
+		976DF94F1DD2CC31000AB320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 976DF94E1DD2CC31000AB320 /* AppDelegate.m */; };
+		976DF9521DD2CC31000AB320 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976DF9511DD2CC31000AB320 /* ViewController.m */; };
+		976DF9551DD2CC31000AB320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976DF9531DD2CC31000AB320 /* Main.storyboard */; };
+		976DF9571DD2CC31000AB320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976DF9561DD2CC31000AB320 /* Assets.xcassets */; };
+		976DF95A1DD2CC31000AB320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976DF9581DD2CC31000AB320 /* LaunchScreen.storyboard */; };
+		976DF9631DD2EC5D000AB320 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976DF9621DD2EC5D000AB320 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		976DF9471DD2CC31000AB320 /* WedBackgroundPlayAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WedBackgroundPlayAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		976DF94B1DD2CC31000AB320 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		976DF94D1DD2CC31000AB320 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		976DF94E1DD2CC31000AB320 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		976DF9501DD2CC31000AB320 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		976DF9511DD2CC31000AB320 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		976DF9541DD2CC31000AB320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		976DF9561DD2CC31000AB320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		976DF9591DD2CC31000AB320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		976DF95B1DD2CC31000AB320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976DF9621DD2EC5D000AB320 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		976DF9441DD2CC31000AB320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976DF9631DD2EC5D000AB320 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		976DF93E1DD2CC31000AB320 = {
+			isa = PBXGroup;
+			children = (
+				976DF9491DD2CC31000AB320 /* WedBackgroundPlayAudio */,
+				976DF9481DD2CC31000AB320 /* Products */,
+				976DF9611DD2EC5D000AB320 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		976DF9481DD2CC31000AB320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				976DF9471DD2CC31000AB320 /* WedBackgroundPlayAudio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		976DF9491DD2CC31000AB320 /* WedBackgroundPlayAudio */ = {
+			isa = PBXGroup;
+			children = (
+				976DF94D1DD2CC31000AB320 /* AppDelegate.h */,
+				976DF94E1DD2CC31000AB320 /* AppDelegate.m */,
+				976DF9501DD2CC31000AB320 /* ViewController.h */,
+				976DF9511DD2CC31000AB320 /* ViewController.m */,
+				976DF9531DD2CC31000AB320 /* Main.storyboard */,
+				976DF9561DD2CC31000AB320 /* Assets.xcassets */,
+				976DF9581DD2CC31000AB320 /* LaunchScreen.storyboard */,
+				976DF95B1DD2CC31000AB320 /* Info.plist */,
+				976DF94A1DD2CC31000AB320 /* Supporting Files */,
+			);
+			path = WedBackgroundPlayAudio;
+			sourceTree = "<group>";
+		};
+		976DF94A1DD2CC31000AB320 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				976DF94B1DD2CC31000AB320 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		976DF9611DD2EC5D000AB320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				976DF9621DD2EC5D000AB320 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		976DF9461DD2CC31000AB320 /* WedBackgroundPlayAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 976DF95E1DD2CC31000AB320 /* Build configuration list for PBXNativeTarget "WedBackgroundPlayAudio" */;
+			buildPhases = (
+				976DF9431DD2CC31000AB320 /* Sources */,
+				976DF9441DD2CC31000AB320 /* Frameworks */,
+				976DF9451DD2CC31000AB320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WedBackgroundPlayAudio;
+			productName = WedBackgroundPlayAudio;
+			productReference = 976DF9471DD2CC31000AB320 /* WedBackgroundPlayAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		976DF93F1DD2CC31000AB320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = August;
+				TargetAttributes = {
+					976DF9461DD2CC31000AB320 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y2BAKEHXE4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 976DF9421DD2CC31000AB320 /* Build configuration list for PBXProject "WedBackgroundPlayAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 976DF93E1DD2CC31000AB320;
+			productRefGroup = 976DF9481DD2CC31000AB320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				976DF9461DD2CC31000AB320 /* WedBackgroundPlayAudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		976DF9451DD2CC31000AB320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976DF95A1DD2CC31000AB320 /* LaunchScreen.storyboard in Resources */,
+				976DF9571DD2CC31000AB320 /* Assets.xcassets in Resources */,
+				976DF9551DD2CC31000AB320 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		976DF9431DD2CC31000AB320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976DF9521DD2CC31000AB320 /* ViewController.m in Sources */,
+				976DF94F1DD2CC31000AB320 /* AppDelegate.m in Sources */,
+				976DF94C1DD2CC31000AB320 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		976DF9531DD2CC31000AB320 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				976DF9541DD2CC31000AB320 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		976DF9581DD2CC31000AB320 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				976DF9591DD2CC31000AB320 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		976DF95C1DD2CC31000AB320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		976DF95D1DD2CC31000AB320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		976DF95F1DD2CC31000AB320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2BAKEHXE4;
+				INFOPLIST_FILE = WedBackgroundPlayAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.WedBackgroundPlayAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		976DF9601DD2CC31000AB320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2BAKEHXE4;
+				INFOPLIST_FILE = WedBackgroundPlayAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AR.WedBackgroundPlayAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		976DF9421DD2CC31000AB320 /* Build configuration list for PBXProject "WedBackgroundPlayAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976DF95C1DD2CC31000AB320 /* Debug */,
+				976DF95D1DD2CC31000AB320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		976DF95E1DD2CC31000AB320 /* Build configuration list for PBXNativeTarget "WedBackgroundPlayAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976DF95F1DD2CC31000AB320 /* Debug */,
+				976DF9601DD2CC31000AB320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 976DF93F1DD2CC31000AB320 /* Project object */;
+}
