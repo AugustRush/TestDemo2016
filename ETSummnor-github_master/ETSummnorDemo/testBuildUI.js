@@ -11,9 +11,3 @@ view = callObjcFunction("init","@@:",[view]);
 var frame = packValues([1,2,3,4],cgrect_encode);
 
 callObjcFunction("setFrame:","v@:"+cgrect_encode,[view,frame]);
-
-callCVarFunction("NSLog","v@@",1,["%@","HELLO WORLD FROM JS"]);
-
-var width = unpackValue(frame,2);
-
-callCVarFunction("NSLog","v@@",1,["width in js is %@",width]);

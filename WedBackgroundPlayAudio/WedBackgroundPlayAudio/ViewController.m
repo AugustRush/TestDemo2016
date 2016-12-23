@@ -28,7 +28,7 @@
         NSLog(@"Error setting AVAudioSessionCategoryPlayback: %@", setCategoryError);
     };
     
-    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    NSURL *url = [NSURL URLWithString:@"http://mco.ime.shahe.baidu.com:8107/cache/hw/?clientversion=7-3-3-3"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     self.webView.delegate = self;
     [self.webView loadRequest:request];

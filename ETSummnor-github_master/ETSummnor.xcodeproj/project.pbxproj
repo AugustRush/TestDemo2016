@@ -370,6 +370,7 @@
 					};
 					B708739B1CF57E230051AC6D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Y2BAKEHXE4;
 					};
 					B70873B61CF57E6F0051AC6D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -608,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2BAKEHXE4;
 				INFOPLIST_FILE = ETSummnorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnorDemo;
@@ -619,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2BAKEHXE4;
 				INFOPLIST_FILE = ETSummnorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeeyes.ETSummnorDemo;

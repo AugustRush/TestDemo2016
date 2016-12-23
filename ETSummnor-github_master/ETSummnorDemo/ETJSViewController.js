@@ -37,7 +37,8 @@ function viewDidLoad(self_obj,method_cmd)
 
 function numberOfRowsInSection(self_obj,method_sel,tableview,section)
 {
-    return 100;
+    var a = 10;
+    return a * 2;
 }
 
 function numberOfSectionsInTableView(self_obj,method_sel,tableview)

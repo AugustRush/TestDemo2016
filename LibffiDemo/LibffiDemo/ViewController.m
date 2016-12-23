@@ -19,15 +19,16 @@
 
 @implementation ViewController
 
-void test1(char *c, int b) {
-    printf("c is %s b is %d",c,b);
+CGRect test1(char *c, CGRect b) {
+    NSLog(@"c is %s b is %@",c,NSStringFromCGRect(b));
+    return b;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    [self callCMethod];
+    [self callCMethod];
 //    [self callObjectCMethod];
 //    [self callObjectCBlock];
 //    [self callCreateObject];
@@ -35,6 +36,36 @@ void test1(char *c, int b) {
 //    [self testAddMethod];
     [self testAllMethod];
 }
+
+- (ffi_type *)ffiStructTypeWithElementsCount:(NSUInteger)count {
+    NSUInteger element_count = count;
+    
+    
+    ffi_type** ffi_type_struct_element = malloc(sizeof(ffi_type*) * (element_count + 1));
+    
+    for(int idx = 0 ; idx < element_count ; idx++){
+        
+        ffi_type_struct_element[idx] = &ffi_type_double;
+        
+    }
+    
+    ffi_type_struct_element[element_count] = NULL;
+    
+    
+    ffi_type* ffi_type_struct_ptr = malloc(sizeof(ffi_type));
+    
+    ffi_type_struct_ptr->size = 0;
+    
+    ffi_type_struct_ptr->alignment = 0;
+    
+    ffi_type_struct_ptr->type = FFI_TYPE_STRUCT;
+    
+    ffi_type_struct_ptr-> elements = ffi_type_struct_element;
+    
+    return ffi_type_struct_ptr;
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -57,19 +88,20 @@ void test1(char *c, int b) {
 
 - (void)callCMethod {
     ffi_cif cif;
-    ffi_type *args[2] = {&ffi_type_pointer,&ffi_type_uint32};
+    ffi_type *rect = [self ffiStructTypeWithElementsCount:4];
+    ffi_type *args[2] = {&ffi_type_pointer,rect};
     char *s;
-    int varg1 = 10;
+    CGRect varg1 = CGRectZero;
     void *values[2];
-    void *rv = NULL;
+    CGRect * rv = (CGRect *)alloca(sizeof(CGRect));
     values[0] = &s;
     values[1] = &varg1;
     
-    ffi_status status = ffi_prep_cif(&cif, FFI_DEFAULT_ABI, 2, &ffi_type_void, args);
+    ffi_status status = ffi_prep_cif(&cif, FFI_DEFAULT_ABI, 2, rect, args);
     if (status == FFI_OK) {
         s = "asdfghjkl";
-        varg1 = 100;
-        ffi_call(&cif, (void *)test1, rv, values);
+        varg1 = CGRectMake(300, 100, 300, 400);
+        ffi_call(&cif, (void *)test1, (void *)rv, values);
     }
 }
 
